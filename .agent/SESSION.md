@@ -13,15 +13,14 @@
 
 ## Goal
 
-MCP setup intro on `/intro` with a copyable agent prompt for integration.
+Fix Royal Platform `404 NOT_FOUND` on `aicodingdictionary-alpha.vercel.app`.
 
 ## Done
 
-- First-run `/understand` complete; `.agent/PROJECT.md` exists
-- Added `/intro` introduction page (how to explore, sections, tours, keys, agents)
-- Linked from About modal, WebGL Fallback, `/terms`, and `/agents`
-- Expanded `/intro` with MCP setup: copyable agent prompt, download/register snippets, tool list
-- `cd app && npm run build` succeeds
+- Added `/intro` + MCP agent prompt; build succeeds
+- Production redeployed to `khoantds-projects/aicodingdictionary` (works)
+- Fixed Royal Platform `aicodingdictionary`: Framework was **Other** → set to **Next.js**, Root Directory `app`
+- Git production redeploy `dpl_EB6WEsRtNj8A31fekE1NXmGZiBjB` → https://aicodingdictionary-alpha.vercel.app/ returns **200**
 
 ## In progress
 
@@ -30,8 +29,9 @@ MCP setup intro on `/intro` with a copyable agent prompt for integration.
 
 ## Next
 
-1. Optional: visual check of `/intro` MCP section in browser
-2. Product lives under `app/`; build with `cd app && npm run build`
+1. Optional: commit uncommitted intro/MCP + ignore fixes
+2. Royal Platform: deploy from **repo root** (or Git API), not from `app/` while Root Directory is `app` (avoids `app/app`)
+3. Personal scope: `cd app && vercel --prod --yes --scope khoantds-projects`
 
 ## Decisions
 
@@ -43,6 +43,8 @@ MCP setup intro on `/intro` with a copyable agent prompt for integration.
 ## Gotchas
 
 - No root `package.json` — use `app/`
+- Two Vercel projects: `khoantds-projects/aicodingdictionary` and `royal-platform/aicodingdictionary`
+- Royal Platform 404 was Framework Preset = Other (empty output), not a missing route
 - CodeGraph indexes agent skill trees; prefer `app/src` path/task filters for product structure
 - Visual checks compare the **no-WebGL fallback**; 3D map needs a real browser with WebGL
 
@@ -54,3 +56,4 @@ MCP setup intro on `/intro` with a copyable agent prompt for integration.
 | Tasks | `tasks/todo.md` |
 | Branch | _(local workspace)_ |
 | Key files | `app/src/app/intro/page.tsx`, `app/src/app/intro/intro.module.css`, `app/src/data/terms.ts`, `app/src/components/Atlas.tsx` |
+| Royal prod | https://aicodingdictionary-alpha.vercel.app/ |

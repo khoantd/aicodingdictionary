@@ -385,6 +385,21 @@ export default function Atlas({ onFail }: { onFail: () => void }) {
         </svg>
       </button>
 
+      {/* Introduction */}
+      <a
+        className={`${s.iconBtn} ${s.introBtn}`}
+        href="/intro/"
+        data-shift={shift ? "true" : "false"}
+        aria-label="Read the introduction"
+        title="Introduction"
+        onClick={() => blip("open")}
+      >
+        <svg className={s.icon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M4.5 5.5A2.5 2.5 0 0 1 7 3h5.5v16.5H7A2.5 2.5 0 0 0 4.5 22z" />
+          <path d="M19.5 5.5A2.5 2.5 0 0 0 17 3h-4.5v16.5H17a2.5 2.5 0 0 1 2.5 2.5z" />
+        </svg>
+      </a>
+
       {/* Guided tours */}
       <button
         type="button"

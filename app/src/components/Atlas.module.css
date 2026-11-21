@@ -87,6 +87,7 @@
   background: transparent;
   border-radius: 50%;
   cursor: pointer;
+  text-decoration: none;
   transition: color 0.2s, border-color 0.2s, right 0.62s var(--reveal-ease);
 }
 
@@ -94,6 +95,11 @@
 .iconBtn[data-active="true"] {
   color: var(--ink);
   border-color: color-mix(in oklch, var(--ink) 60%, transparent);
+}
+
+.iconBtn:focus-visible {
+  outline: 2px solid color-mix(in oklch, var(--ink) 55%, transparent);
+  outline-offset: 2px;
 }
 
 .icon {
@@ -108,22 +114,35 @@
   right: 32px;
 }
 
-.toursBtn {
+.introBtn {
   position: fixed;
   top: 28px;
   right: calc(32px + 3rem);
 }
 
+.toursBtn {
+  position: fixed;
+  top: 28px;
+  right: calc(32px + 6rem);
+}
+
 @media (min-width: 800px) {
-  .toursBtn[data-shift="true"] {
+  .introBtn[data-shift="true"] {
     right: calc(33.3333vw + 32px + 3rem);
+  }
+  .toursBtn[data-shift="true"] {
+    right: calc(33.3333vw + 32px + 6rem);
   }
 }
 
 @media (max-width: 800px) {
-  .toursBtn {
+  .introBtn {
     top: 14px;
     right: calc(14px + 3rem);
+  }
+  .toursBtn {
+    top: 14px;
+    right: calc(14px + 6rem);
   }
 }
 
