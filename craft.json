@@ -1,0 +1,147 @@
+{
+  "version": 5,
+  "name": "aicodingdictionary.com",
+  "request": "I want to build a clone like this website and it can be used by AI agent",
+  "target": {
+    "kind": "website",
+    "url": "https://www.aicodingdictionary.com/"
+  },
+  "stack": "Next.js + TypeScript",
+  "status": "ready",
+  "note": "Ready: about 98% like the original, 6 of 6 claims hold.",
+  "created_ms": 1795253167800,
+  "updated_ms": 1795254796867,
+  "checks": [
+    {
+      "round": 1,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 98.22353643017937,
+      "note": "1440 px: 99% alike (layout 100%, detail 98%; page height 900 vs 900 px); 768 px: 98% alike (layout 100%, detail 96%; page height 900 vs 900 px); 390 px: 98% alike (layout 100%, detail 96%; page height 900 vs 900 px); text 72% alike; missing words: via, humans, rate, billed, judgement, lower, mechanism, pattern, points, aihero, automatically, brief; structure 100% alike",
+      "artifacts": [
+        "checks/round-1/screenshot-1440.png",
+        "checks/round-1/screenshot-768.png",
+        "checks/round-1/screenshot-390.png"
+      ],
+      "at_ms": 1795254478575,
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 98.22353643017937,
+      "note": "1440 px: 99% alike (layout 100%, detail 98%; page height 900 vs 900 px); 768 px: 98% alike (layout 100%, detail 96%; page height 900 vs 900 px); 390 px: 98% alike (layout 100%, detail 96%; page height 900 vs 900 px); text 72% alike; missing words: via, humans, rate, billed, judgement, lower, mechanism, pattern, points, aihero, automatically, brief; structure 100% alike",
+      "artifacts": [
+        "checks/round-0/screenshot-1440.png",
+        "checks/round-0/screenshot-768.png",
+        "checks/round-0/screenshot-390.png"
+      ],
+      "at_ms": 1795254788324,
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "agent_session": "f665cdde-c5d0-499b-8443-77e2ef5b9fc6",
+  "agent_session_by": "claude-code",
+  "agent_session_deep": true,
+  "capture_deep": true,
+  "allowed_actions": [
+    "tool:web_site_open",
+    "tool:build_command_run"
+  ],
+  "last_reply": "I decided: **\"What is the next level?\"** → **guided tours** through the map, plus a **\"Connect your agent\"** page. Tours turn the 72 separate terms into short step-by-step lessons. The agent page gives copy-paste setup so any AI agent can actually use the dictionary. Building it now.Writing the tours first.Now the map: draw the tour route between its stops.Now wiring tours into the main screen.Now styles for the tours button and list, and the tour strip in the term panel.Now the panel logic for tours.Now giving agents the tours too (in-page tools, data file, MCP server, llms.txt).Now the MCP server gets the tours as well.Now the \"Connect your agent\" page with copy-paste setup.Build passes. Testing the agent server's new tour tools, then a look at a tour in a real browser.I chose two upgrades and both are built:\n- **Guided tours:** a new button on the map opens four short step-by-step lessons, such as \"Anatomy of a turn\" and \"Keeping costs down\". A dashed line traces each tour's route across the 3D map, and each stop explains why it matters, with a progress bar.\n- **\"Connect your agent\" page:** copy-paste setup for linking AI agents like Claude Code and Cursor to the dictionary, or adding it to their standing instructions.\n\nAgents can also list and read the tours, and can start one for you on the map. I ran the downloadable agent helper and its new tour commands answered correctly, and I viewed a tour running in a real browser. The build succeeds and the comparison with the original still passes at 98%.",
+  "asset_budget_usd": 5.0,
+  "generate_assets": false,
+  "start_files": [
+    ".DS_Store",
+    "02-SaaS-Codebase",
+    "02-SaaS-Codebase.zip",
+    "1code",
+    "AutoGPT",
+    "Awesome-Prompt-Version-Management",
+    "BrowserOS",
+    "Context-Engineering-with-Inngest",
+    "CraftMCP",
+    "FossFLOW",
+    "GitVizz",
+    "JS-3D-Car",
+    "Jobseekingpostingplatform",
+    "LibreChat",
+    "OPM",
+    "OpenBot",
+    "adr-architect",
+    "agent-harness-engineering-pattern",
+    "agent-harness-engineering-pattern-1",
+    "agent-workflow",
+    "agentic-workflow",
+    "ai-fe-design",
+    "ai-primitives-hub",
+    "ai-strategy-navigator",
+    "ai-website-cloner-template",
+    "ai-website-cloner-template-build-footer",
+    "ai-website-cloner-template-header",
+    "ai-website-cloner-template-hero-section",
+    "ai-website-cloner-template-job-card",
+    "ai-writer",
+    "aidi-reflects-studio",
+    "aidi-reflects-studio-1",
+    "anatomy",
+    "api",
+    "auditread-ai",
+    "auditready-mcp",
+    "automaker",
+    "auton8n-git",
+    "bat-tu-luan-giai",
+    "bibi-exec-canvas"
+  ]
+}

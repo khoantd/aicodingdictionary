@@ -1,0 +1,202 @@
+.page {
+  --ink: #1a1a19;
+  --paper: #f2f2f0;
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  padding: clamp(1.6rem, 5vw, 4rem) clamp(1.25rem, 6vw, 5rem) 5rem;
+}
+
+.inner {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.kicker {
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in oklch, var(--ink) 64%, transparent);
+}
+
+.back {
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1px solid color-mix(in oklch, var(--ink) 26%, transparent);
+  border-radius: 999px;
+  padding: 0.42em 0.95em;
+  color: color-mix(in oklch, var(--ink) 82%, transparent);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.back:hover {
+  color: var(--ink);
+  border-color: color-mix(in oklch, var(--ink) 60%, transparent);
+}
+
+.rule {
+  display: block;
+  height: 1px;
+  background: var(--hair);
+  margin: 0.9rem 0 0;
+}
+
+.title {
+  margin: clamp(1.6rem, 3.4vh, 2.6rem) 0 0;
+  font-size: clamp(2.4rem, 6vw, 3.9rem);
+  font-weight: 700;
+  line-height: 0.94;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.def {
+  margin: 1.1rem 0 0;
+  font-size: 1.12rem;
+  line-height: 1.5;
+  max-width: 34ch;
+  color: color-mix(in oklch, var(--ink) 86%, transparent);
+}
+
+.label {
+  margin: 2rem 0 0.85rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: color-mix(in oklch, var(--ink) 46%, transparent);
+}
+
+.prose p {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: color-mix(in oklch, var(--ink) 80%, transparent);
+}
+
+.prose a,
+.list a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in oklch, var(--ink) 38%, transparent);
+}
+
+.prose a:hover,
+.list a:hover {
+  text-decoration-color: var(--ink);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1px solid color-mix(in oklch, var(--ink) 26%, transparent);
+  border-radius: 999px;
+  padding: 0.3em 0.85em;
+  color: color-mix(in oklch, var(--ink) 82%, transparent);
+}
+
+.tag:hover {
+  color: var(--ink);
+  border-color: color-mix(in oklch, var(--ink) 60%, transparent);
+}
+
+.bubbles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.q,
+.a {
+  max-width: 86%;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.q {
+  align-self: flex-start;
+  border: 1px solid var(--hair);
+  border-radius: 0.85rem 0.85rem 0.85rem 0.1rem;
+}
+
+.a {
+  align-self: flex-end;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 0.85rem 0.85rem 0.1rem;
+}
+
+.formats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.primary {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.5em 1.05em;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--hair);
+  display: grid;
+  grid-template-columns: minmax(8rem, 13rem) 1fr;
+  gap: 1rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.list li a {
+  font-weight: 600;
+}
+
+.list li span {
+  color: color-mix(in oklch, var(--ink) 74%, transparent);
+}
+
+@media (max-width: 480px) {
+  .list li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

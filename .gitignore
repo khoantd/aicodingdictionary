@@ -1,0 +1,25 @@
+# Dependencies & build
+app/node_modules/
+app/.next/
+app/out/
+
+# Code intelligence / local agent state
+.codegraph/
+
+# Craft / session noise
+agent-session.jsonl
+build-activity.log
+usage.json
+feed.json
+investigation.cany/
+
+# Env & OS
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts

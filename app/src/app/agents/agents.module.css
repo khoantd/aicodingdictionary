@@ -1,0 +1,135 @@
+.step {
+  margin-top: 2.4rem;
+}
+
+.stepTitle {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: color-mix(in oklch, var(--ink) 50%, transparent);
+}
+
+.text {
+  margin: 0.6rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: color-mix(in oklch, var(--ink) 80%, transparent);
+}
+
+.text a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in oklch, var(--ink) 38%, transparent);
+}
+
+.code {
+  margin-top: 0.85rem;
+  border-radius: 0.8rem;
+  background: var(--ink);
+  color: #eaeae8;
+  overflow: hidden;
+}
+
+.codeHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.6rem 0 1rem;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #eaeae899;
+}
+
+.copy {
+  padding: 0.25em 0.8em;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #eaeae8;
+  background: none;
+  border: 1px solid #eaeae84d;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.copy:hover,
+.copy[data-copied="true"] {
+  border-color: #eaeae8;
+}
+
+.code pre {
+  margin: 0;
+  padding: 0.6rem 1rem 1rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.table {
+  width: 100%;
+  margin-top: 0.85rem;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.table td {
+  padding: 0.6rem 0.5rem 0.6rem 0;
+  border-bottom: 1px solid var(--hair);
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.table td:first-child {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  white-space: nowrap;
+  padding-right: 1rem;
+}
+
+.table td:first-child a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in oklch, var(--ink) 38%, transparent);
+}
+
+.prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+}
+
+.prompt {
+  align-self: flex-start;
+  max-width: 90%;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border: 1px solid var(--hair);
+  border-radius: 0.85rem 0.85rem 0.85rem 0.1rem;
+}
+
+@media (max-width: 480px) {
+  .table td:first-child {
+    white-space: normal;
+    word-break: break-all;
+  }
+}

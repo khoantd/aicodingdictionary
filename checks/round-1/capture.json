@@ -1,0 +1,2449 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "main": 1
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "http://127.0.0.1:55569/fonts/ServerMono-Regular.woff2"
+    ],
+    "images": [],
+    "inline_scripts": 15,
+    "requests": [
+      {
+        "bytes": 25112,
+        "type": "link",
+        "url": "http://127.0.0.1:55569/fonts/ServerMono-Regular.woff2"
+      },
+      {
+        "bytes": 1886,
+        "type": "link",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/2ql8j_dktnu0h.css"
+      },
+      {
+        "bytes": 13120,
+        "type": "link",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/231aglzvb5nfr.css"
+      },
+      {
+        "bytes": 22247,
+        "type": "link",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/0wfurka9errm3.js"
+      },
+      {
+        "bytes": 182703,
+        "type": "script",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/0hhb7vbvlw3bd.js"
+      },
+      {
+        "bytes": 10274,
+        "type": "script",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/turbopack-2u1d16houkiyo.js"
+      },
+      {
+        "bytes": 229588,
+        "type": "script",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/39_j1bdzreq0m.js"
+      },
+      {
+        "bytes": 8418,
+        "type": "script",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/3rua-p4x5xd73.js"
+      },
+      {
+        "bytes": 14294,
+        "type": "script",
+        "url": "http://127.0.0.1:55569/_next/static/chunks/3qfy96eoyh-ek.js"
+      },
+      {
+        "bytes": 820,
+        "type": "other",
+        "url": "http://127.0.0.1:55569/favicon.ico"
+      }
+    ],
+    "scripts": [
+      "http://127.0.0.1:55569/_next/static/chunks/0hhb7vbvlw3bd.js",
+      "http://127.0.0.1:55569/_next/static/chunks/39_j1bdzreq0m.js",
+      "http://127.0.0.1:55569/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+      "http://127.0.0.1:55569/_next/static/chunks/3qfy96eoyh-ek.js",
+      "http://127.0.0.1:55569/_next/static/chunks/3rua-p4x5xd73.js",
+      "http://127.0.0.1:55569/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "http://127.0.0.1:55569/_next/static/chunks/0wfurka9errm3.js"
+    ],
+    "stylesheets": [
+      "http://127.0.0.1:55569/_next/static/chunks/2ql8j_dktnu0h.css",
+      "http://127.0.0.1:55569/_next/static/chunks/231aglzvb5nfr.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 1,
+      "px": 480,
+      "query": "max-width 480px"
+    },
+    {
+      "count": 4,
+      "px": 800,
+      "query": "max-width 800px"
+    },
+    {
+      "count": 2,
+      "px": 800,
+      "query": "min-width 800px"
+    },
+    {
+      "count": 1,
+      "px": 801,
+      "query": "min-width 801px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 3,
+        "value": "#eaeae8"
+      },
+      {
+        "count": 1,
+        "value": "#1919191f"
+      },
+      {
+        "count": 1,
+        "value": "#1a1a19"
+      }
+    ],
+    "css_variables": {
+      "--ease": "cubic-bezier(.16, 1, .3, 1)",
+      "--font-mono": "mono, ui-monospace, SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace",
+      "--hair": "color-mix(in oklch, var(--ink) 16%, transparent)",
+      "--ink": "#1a1a19",
+      "--paper": "#eaeae8",
+      "--sans": "\"Helvetica Neue\", Helvetica, Arial, system-ui, sans-serif",
+      "--section-ink": "#1a1a19",
+      "--section-paper": "#f2f2f0"
+    },
+    "font_faces": [
+      {
+        "family": "mono",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 157,
+        "value": "16px"
+      },
+      {
+        "count": 2,
+        "value": "14.4px"
+      },
+      {
+        "count": 1,
+        "value": "9.92px"
+      },
+      {
+        "count": 1,
+        "value": "49.6px"
+      },
+      {
+        "count": 1,
+        "value": "15.36px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 158,
+        "value": "400"
+      },
+      {
+        "count": 3,
+        "value": "500"
+      },
+      {
+        "count": 1,
+        "value": "700"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 157,
+        "value": "Times"
+      },
+      {
+        "count": 4,
+        "value": "\"Helvetica Neue\", Helvetica, Arial, system-ui, sans-serif"
+      },
+      {
+        "count": 1,
+        "value": "mono, ui-monospace, SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "303.354px"
+      },
+      {
+        "count": 1,
+        "value": "368px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 2,
+        "value": "999px"
+      },
+      {
+        "count": 1,
+        "value": "2px"
+      }
+    ],
+    "shadows": [],
+    "spacing": [
+      {
+        "count": 5,
+        "value": "8px"
+      },
+      {
+        "count": 4,
+        "value": "-1px"
+      },
+      {
+        "count": 4,
+        "value": "32px"
+      },
+      {
+        "count": 4,
+        "value": "18px"
+      },
+      {
+        "count": 2,
+        "value": "9.6px"
+      },
+      {
+        "count": 1,
+        "value": "17.6px"
+      },
+      {
+        "count": 1,
+        "value": "25.6px"
+      },
+      {
+        "count": 1,
+        "value": "24px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 158,
+        "value": "#1a1a19"
+      },
+      {
+        "count": 1,
+        "value": "#1a1a1a61"
+      },
+      {
+        "count": 1,
+        "value": "#1b1a1abd"
+      },
+      {
+        "count": 1,
+        "value": "#eaeae8"
+      },
+      {
+        "count": 1,
+        "value": "#1b1a1ad1"
+      }
+    ]
+  },
+  "forms": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "AI CODING DICTIONARY"
+    },
+    {
+      "level": 1,
+      "text": "The AI Coding Dictionary"
+    },
+    {
+      "level": 2,
+      "text": "The Model"
+    },
+    {
+      "level": 2,
+      "text": "Sessions, Context Windows & Turns"
+    },
+    {
+      "level": 2,
+      "text": "Tools & Environment"
+    },
+    {
+      "level": 2,
+      "text": "Failure Modes"
+    },
+    {
+      "level": 2,
+      "text": "Handoffs"
+    },
+    {
+      "level": 2,
+      "text": "Memory and Steering"
+    },
+    {
+      "level": 2,
+      "text": "Patterns of Work"
+    }
+  ],
+  "health": {
+    "errors": [],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#eaeae8",
+          "column": {
+            "max_w": 303,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 303,
+            "x": 568
+          },
+          "h": 900,
+          "heading": "AI CODING DICTIONARY",
+          "pad": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "per_row": 1,
+          "tag": "main",
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "h": 594,
+          "heading": "The Model",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 935
+        },
+        {
+          "h": 306,
+          "heading": "Sessions, Context Windows & Turns",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1529
+        },
+        {
+          "h": 378,
+          "heading": "Tools & Environment",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1835
+        },
+        {
+          "h": 342,
+          "heading": "Failure Modes",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2213
+        },
+        {
+          "h": 342,
+          "heading": "Handoffs",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2555
+        },
+        {
+          "h": 270,
+          "heading": "Memory and Steering",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2897
+        },
+        {
+          "h": 486,
+          "heading": "Patterns of Work",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 3167
+        }
+      ],
+      "page_h": 900,
+      "page_w": 1440,
+      "type": {
+        "body": 10,
+        "h1": 50,
+        "h2": 16,
+        "h3": 0
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#eaeae8",
+          "column": {
+            "max_w": 244,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 244,
+            "x": 262
+          },
+          "h": 900,
+          "heading": "AI CODING DICTIONARY",
+          "pad": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 768,
+          "y": 0
+        },
+        {
+          "h": 594,
+          "heading": "The Model",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 935
+        },
+        {
+          "h": 306,
+          "heading": "Sessions, Context Windows & Turns",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1529
+        },
+        {
+          "h": 378,
+          "heading": "Tools & Environment",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1835
+        },
+        {
+          "h": 342,
+          "heading": "Failure Modes",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2213
+        },
+        {
+          "h": 342,
+          "heading": "Handoffs",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2555
+        },
+        {
+          "h": 270,
+          "heading": "Memory and Steering",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2897
+        },
+        {
+          "h": 486,
+          "heading": "Patterns of Work",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 3167
+        }
+      ],
+      "page_h": 900,
+      "page_w": 768,
+      "type": {
+        "body": 10,
+        "h1": 40,
+        "h2": 16,
+        "h3": 0
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#eaeae8",
+          "column": {
+            "max_w": 166,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 166,
+            "x": 112
+          },
+          "h": 900,
+          "heading": "AI CODING DICTIONARY",
+          "pad": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "per_row": 1,
+          "tag": "main",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "h": 594,
+          "heading": "The Model",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 935
+        },
+        {
+          "h": 306,
+          "heading": "Sessions, Context Windows & Turns",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1529
+        },
+        {
+          "h": 378,
+          "heading": "Tools & Environment",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1835
+        },
+        {
+          "h": 342,
+          "heading": "Failure Modes",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2213
+        },
+        {
+          "h": 342,
+          "heading": "Handoffs",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2555
+        },
+        {
+          "h": 270,
+          "heading": "Memory and Steering",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2897
+        },
+        {
+          "h": 486,
+          "heading": "Patterns of Work",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 3167
+        }
+      ],
+      "page_h": 900,
+      "page_w": 390,
+      "type": {
+        "body": 8,
+        "h1": 27,
+        "h2": 16,
+        "h3": 0
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "http://127.0.0.1:55569/#main-content",
+      "text": "Skip to main content"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/",
+      "text": "Browse all terms"
+    },
+    {
+      "href": "http://127.0.0.1:55569/llms.txt",
+      "text": "Markdown for agents"
+    },
+    {
+      "href": "http://127.0.0.1:55569/llms.txt",
+      "text": "/llms.txt"
+    },
+    {
+      "href": "http://127.0.0.1:55569/api/terms.json",
+      "text": "/api/terms.json"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/ai/",
+      "text": "AI"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/cache-tokens/",
+      "text": "Cache tokens"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/effort/",
+      "text": "Effort"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/harness/",
+      "text": "Harness"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/inference/",
+      "text": "Inference"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/input-tokens/",
+      "text": "Input tokens"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/model-provider-request/",
+      "text": "Model provider request"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/model-provider/",
+      "text": "Model provider"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/model/",
+      "text": "Model"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/next-token-prediction/",
+      "text": "Next-token prediction"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/non-determinism/",
+      "text": "Non-determinism"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/output-tokens/",
+      "text": "Output tokens"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/parameters/",
+      "text": "Parameters"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/prefix-cache/",
+      "text": "Prefix cache"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/token/",
+      "text": "Token"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/training/",
+      "text": "Training"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/agent/",
+      "text": "Agent"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/context-window/",
+      "text": "Context window"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/context/",
+      "text": "Context"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/session/",
+      "text": "Session"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/stateful/",
+      "text": "Stateful"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/stateless/",
+      "text": "Stateless"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/system-prompt/",
+      "text": "System prompt"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/turn/",
+      "text": "Turn"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/agent-mode/",
+      "text": "Agent mode"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/environment/",
+      "text": "Environment"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/filesystem/",
+      "text": "Filesystem"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/mcp/",
+      "text": "MCP"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/permission-mode/",
+      "text": "Permission mode"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/permission-request/",
+      "text": "Permission request"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/sandbox/",
+      "text": "Sandbox"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/tool-call/",
+      "text": "Tool call"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/tool-result/",
+      "text": "Tool result"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/tool/",
+      "text": "Tool"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/attention-budget/",
+      "text": "Attention budget"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/attention-degradation/",
+      "text": "Attention degradation"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/attention-relationship/",
+      "text": "Attention relationship"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/contextual-knowledge/",
+      "text": "Contextual knowledge"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/hallucination/",
+      "text": "Hallucination"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/knowledge-cutoff/",
+      "text": "Knowledge cutoff"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/parametric-knowledge/",
+      "text": "Parametric knowledge"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/smart-zone/",
+      "text": "Smart zone"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/sycophancy/",
+      "text": "Sycophancy"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/autocompact/",
+      "text": "Autocompact"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/clearing/",
+      "text": "Clearing"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/compaction/",
+      "text": "Compaction"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/handoff-artifact/",
+      "text": "Handoff artifact"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/handoff/",
+      "text": "Handoff"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/primary-source/",
+      "text": "Primary source"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/secondary-source/",
+      "text": "Secondary source"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/spec/",
+      "text": "Spec"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/ticket/",
+      "text": "Ticket"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/agents-md/",
+      "text": "AGENTS.md"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/context-pointer/",
+      "text": "Context pointer"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/home-repo/",
+      "text": "Home Repo"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/memory-system/",
+      "text": "Memory system"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/progressive-disclosure/",
+      "text": "Progressive disclosure"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/skill/",
+      "text": "Skill"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/subagent/",
+      "text": "Subagent"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/afk/",
+      "text": "AFK"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/ax/",
+      "text": "AX"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/automated-check/",
+      "text": "Automated check"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/automated-review/",
+      "text": "Automated review"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/dx/",
+      "text": "DX"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/dark-factory/",
+      "text": "Dark factory"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/design-concept/",
+      "text": "Design concept"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/grilling/",
+      "text": "Grilling"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/human-review/",
+      "text": "Human review"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/human-in-the-loop/",
+      "text": "Human-in-the-loop"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/prototyping/",
+      "text": "Prototyping"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/software-factory/",
+      "text": "Software factory"
+    },
+    {
+      "href": "http://127.0.0.1:55569/terms/vibe-coding/",
+      "text": "Vibe coding"
+    }
+  ],
+  "meta": {
+    "description": "The words people use when they talk about AI coding — tokens, context windows, agents, handoffs — defined plainly and wired into a 3D map you can explore term by term.",
+    "icons": [],
+    "og_image": "",
+    "og_title": "The AI Coding Dictionary",
+    "theme_color": "#eaeae8"
+  },
+  "outline": [
+    {
+      "box": {
+        "h": 1,
+        "w": 1,
+        "x": -1,
+        "y": -1
+      },
+      "class": "sr-only skip",
+      "color": "#1a1a19",
+      "depth": 2,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/#main-content",
+      "tag": "a",
+      "text": "Skip to main content"
+    },
+    {
+      "background": "#eaeae8",
+      "box": {
+        "h": 900,
+        "w": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "class": "_0aTR3W_root",
+      "color": "#1a1a19",
+      "depth": 2,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "main-content",
+      "tag": "main"
+    },
+    {
+      "box": {
+        "h": 11,
+        "w": 157,
+        "x": 641,
+        "y": 295
+      },
+      "class": "_0aTR3W_credit",
+      "color": "#1a1a1a61",
+      "depth": 4,
+      "font": "9.92px 500",
+      "tag": "p",
+      "text": "AN OPEN GLOSSARY"
+    },
+    {
+      "box": {
+        "h": 107,
+        "w": 303,
+        "x": 568,
+        "y": 314
+      },
+      "class": "_0aTR3W_title",
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "49.6px 700",
+      "tag": "h1",
+      "text": "AI CODING DICTIONARY"
+    },
+    {
+      "box": {
+        "h": 71,
+        "w": 368,
+        "x": 536,
+        "y": 466
+      },
+      "class": "_0aTR3W_message",
+      "color": "#1b1a1abd",
+      "depth": 4,
+      "font": "15.36px 400",
+      "tag": "p",
+      "text": "The 3D map needs WebGL, which isn't available in this browser. Every term is also a plain page, and agents can read it all as Markdown."
+    },
+    {
+      "background": "#1a1a19",
+      "box": {
+        "h": 44,
+        "w": 169,
+        "x": 531,
+        "y": 561
+      },
+      "class": "_0aTR3W_primary",
+      "color": "#eaeae8",
+      "depth": 5,
+      "font": "14.4px 500",
+      "href": "http://127.0.0.1:55569/terms/",
+      "tag": "a",
+      "text": "Browse all terms"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 15,
+        "x": 666,
+        "y": 576
+      },
+      "color": "#eaeae8",
+      "depth": 6,
+      "font": "14.4px 500",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 200,
+        "x": 710,
+        "y": 561
+      },
+      "class": "_0aTR3W_secondary",
+      "color": "#1b1a1ad1",
+      "depth": 5,
+      "font": "14.4px 500",
+      "href": "http://127.0.0.1:55569/llms.txt",
+      "tag": "a",
+      "text": "Markdown for agents"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 15,
+        "x": 876,
+        "y": 576
+      },
+      "color": "#1b1a1ad1",
+      "depth": 6,
+      "font": "14.4px 500",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 1,
+        "w": 1,
+        "x": -1,
+        "y": 899
+      },
+      "class": "sr-only",
+      "color": "#1a1a19",
+      "depth": 2,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "article"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 899
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "font": "16px 400",
+      "tag": "h1",
+      "text": "The AI Coding Dictionary"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 917
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The vocabulary of AI coding, in plain English. Agents can read it all at /llms.txt or /api/terms.json."
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 53,
+        "x": 456,
+        "y": 917
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/llms.txt",
+      "tag": "a",
+      "text": "/llms.txt"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 95,
+        "x": 530,
+        "y": 917
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/api/terms.json",
+      "tag": "a",
+      "text": "/api/terms.json"
+    },
+    {
+      "box": {
+        "h": 594,
+        "w": 1,
+        "x": -1,
+        "y": 935
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 935
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "The Model"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 17,
+        "x": -1,
+        "y": 953
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/ai/",
+      "tag": "a",
+      "text": "AI"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 86,
+        "x": -1,
+        "y": 989
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/cache-tokens/",
+      "tag": "a",
+      "text": "Cache tokens"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 38,
+        "x": -1,
+        "y": 1025
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/effort/",
+      "tag": "a",
+      "text": "Effort"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 52,
+        "x": -1,
+        "y": 1061
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/harness/",
+      "tag": "a",
+      "text": "Harness"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 60,
+        "x": -1,
+        "y": 1097
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/inference/",
+      "tag": "a",
+      "text": "Inference"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 80,
+        "x": -1,
+        "y": 1133
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/input-tokens/",
+      "tag": "a",
+      "text": "Input tokens"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 150,
+        "x": -1,
+        "y": 1169
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/model-provider-request/",
+      "tag": "a",
+      "text": "Model provider request"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 100,
+        "x": -1,
+        "y": 1205
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/model-provider/",
+      "tag": "a",
+      "text": "Model provider"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 42,
+        "x": -1,
+        "y": 1241
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/model/",
+      "tag": "a",
+      "text": "Model"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 141,
+        "x": -1,
+        "y": 1277
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/next-token-prediction/",
+      "tag": "a",
+      "text": "Next-token prediction"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 113,
+        "x": -1,
+        "y": 1313
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/non-determinism/",
+      "tag": "a",
+      "text": "Non-determinism"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 90,
+        "x": -1,
+        "y": 1349
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/output-tokens/",
+      "tag": "a",
+      "text": "Output tokens"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 71,
+        "x": -1,
+        "y": 1385
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/parameters/",
+      "tag": "a",
+      "text": "Parameters"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 79,
+        "x": -1,
+        "y": 1421
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/prefix-cache/",
+      "tag": "a",
+      "text": "Prefix cache"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 40,
+        "x": -1,
+        "y": 1457
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/token/",
+      "tag": "a",
+      "text": "Token"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 55,
+        "x": -1,
+        "y": 1493
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/training/",
+      "tag": "a",
+      "text": "Training"
+    },
+    {
+      "box": {
+        "h": 306,
+        "w": 1,
+        "x": -1,
+        "y": 1529
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 1529
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Sessions, Context Windows & Turns"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 39,
+        "x": -1,
+        "y": 1547
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/agent/",
+      "tag": "a",
+      "text": "Agent"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 106,
+        "x": -1,
+        "y": 1583
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/context-window/",
+      "tag": "a",
+      "text": "Context window"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 51,
+        "x": -1,
+        "y": 1619
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/context/",
+      "tag": "a",
+      "text": "Context"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 49,
+        "x": -1,
+        "y": 1655
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/session/",
+      "tag": "a",
+      "text": "Session"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 50,
+        "x": -1,
+        "y": 1691
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/stateful/",
+      "tag": "a",
+      "text": "Stateful"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 56,
+        "x": -1,
+        "y": 1727
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/stateless/",
+      "tag": "a",
+      "text": "Stateless"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 97,
+        "x": -1,
+        "y": 1763
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/system-prompt/",
+      "tag": "a",
+      "text": "System prompt"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 31,
+        "x": -1,
+        "y": 1799
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/turn/",
+      "tag": "a",
+      "text": "Turn"
+    },
+    {
+      "box": {
+        "h": 378,
+        "w": 1,
+        "x": -1,
+        "y": 1835
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 1835
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Tools & Environment"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 79,
+        "x": -1,
+        "y": 1853
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/agent-mode/",
+      "tag": "a",
+      "text": "Agent mode"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 84,
+        "x": -1,
+        "y": 1889
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/environment/",
+      "tag": "a",
+      "text": "Environment"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 69,
+        "x": -1,
+        "y": 1925
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/filesystem/",
+      "tag": "a",
+      "text": "Filesystem"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 34,
+        "x": -1,
+        "y": 1961
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/mcp/",
+      "tag": "a",
+      "text": "MCP"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 111,
+        "x": -1,
+        "y": 1997
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/permission-mode/",
+      "tag": "a",
+      "text": "Permission mode"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 121,
+        "x": -1,
+        "y": 2033
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/permission-request/",
+      "tag": "a",
+      "text": "Permission request"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 56,
+        "x": -1,
+        "y": 2069
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/sandbox/",
+      "tag": "a",
+      "text": "Sandbox"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 56,
+        "x": -1,
+        "y": 2105
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/tool-call/",
+      "tag": "a",
+      "text": "Tool call"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 69,
+        "x": -1,
+        "y": 2141
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/tool-result/",
+      "tag": "a",
+      "text": "Tool result"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 29,
+        "x": -1,
+        "y": 2177
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/tool/",
+      "tag": "a",
+      "text": "Tool"
+    },
+    {
+      "box": {
+        "h": 342,
+        "w": 1,
+        "x": -1,
+        "y": 2213
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 2213
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Failure Modes"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 108,
+        "x": -1,
+        "y": 2231
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/attention-budget/",
+      "tag": "a",
+      "text": "Attention budget"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 140,
+        "x": -1,
+        "y": 2267
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/attention-degradation/",
+      "tag": "a",
+      "text": "Attention degradation"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 140,
+        "x": -1,
+        "y": 2303
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/attention-relationship/",
+      "tag": "a",
+      "text": "Attention relationship"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 144,
+        "x": -1,
+        "y": 2339
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/contextual-knowledge/",
+      "tag": "a",
+      "text": "Contextual knowledge"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 87,
+        "x": -1,
+        "y": 2375
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/hallucination/",
+      "tag": "a",
+      "text": "Hallucination"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 116,
+        "x": -1,
+        "y": 2411
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/knowledge-cutoff/",
+      "tag": "a",
+      "text": "Knowledge cutoff"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 144,
+        "x": -1,
+        "y": 2447
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/parametric-knowledge/",
+      "tag": "a",
+      "text": "Parametric knowledge"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 72,
+        "x": -1,
+        "y": 2483
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/smart-zone/",
+      "tag": "a",
+      "text": "Smart zone"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 78,
+        "x": -1,
+        "y": 2519
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/sycophancy/",
+      "tag": "a",
+      "text": "Sycophancy"
+    },
+    {
+      "box": {
+        "h": 342,
+        "w": 1,
+        "x": -1,
+        "y": 2555
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 2555
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Handoffs"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 86,
+        "x": -1,
+        "y": 2573
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/autocompact/",
+      "tag": "a",
+      "text": "Autocompact"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 55,
+        "x": -1,
+        "y": 2609
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/clearing/",
+      "tag": "a",
+      "text": "Clearing"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 78,
+        "x": -1,
+        "y": 2645
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/compaction/",
+      "tag": "a",
+      "text": "Compaction"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 102,
+        "x": -1,
+        "y": 2681
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/handoff-artifact/",
+      "tag": "a",
+      "text": "Handoff artifact"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 53,
+        "x": -1,
+        "y": 2717
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/handoff/",
+      "tag": "a",
+      "text": "Handoff"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 97,
+        "x": -1,
+        "y": 2753
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/primary-source/",
+      "tag": "a",
+      "text": "Primary source"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 113,
+        "x": -1,
+        "y": 2789
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/secondary-source/",
+      "tag": "a",
+      "text": "Secondary source"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 31,
+        "x": -1,
+        "y": 2825
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/spec/",
+      "tag": "a",
+      "text": "Spec"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 40,
+        "x": -1,
+        "y": 2861
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/ticket/",
+      "tag": "a",
+      "text": "Ticket"
+    },
+    {
+      "box": {
+        "h": 270,
+        "w": 1,
+        "x": -1,
+        "y": 2897
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 2897
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Memory and Steering"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 88,
+        "x": -1,
+        "y": 2915
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/agents-md/",
+      "tag": "a",
+      "text": "AGENTS.md"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 100,
+        "x": -1,
+        "y": 2951
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/context-pointer/",
+      "tag": "a",
+      "text": "Context pointer"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 77,
+        "x": -1,
+        "y": 2987
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/home-repo/",
+      "tag": "a",
+      "text": "Home Repo"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 104,
+        "x": -1,
+        "y": 3023
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/memory-system/",
+      "tag": "a",
+      "text": "Memory system"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 144,
+        "x": -1,
+        "y": 3059
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/progressive-disclosure/",
+      "tag": "a",
+      "text": "Progressive disclosure"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 30,
+        "x": -1,
+        "y": 3095
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/skill/",
+      "tag": "a",
+      "text": "Skill"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 60,
+        "x": -1,
+        "y": 3131
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/subagent/",
+      "tag": "a",
+      "text": "Subagent"
+    },
+    {
+      "box": {
+        "h": 486,
+        "w": 1,
+        "x": -1,
+        "y": 3167
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 3167
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Patterns of Work"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 32,
+        "x": -1,
+        "y": 3185
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/afk/",
+      "tag": "a",
+      "text": "AFK"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 23,
+        "x": -1,
+        "y": 3221
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/ax/",
+      "tag": "a",
+      "text": "AX"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 112,
+        "x": -1,
+        "y": 3257
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/automated-check/",
+      "tag": "a",
+      "text": "Automated check"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 119,
+        "x": -1,
+        "y": 3293
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/automated-review/",
+      "tag": "a",
+      "text": "Automated review"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 23,
+        "x": -1,
+        "y": 3329
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/dx/",
+      "tag": "a",
+      "text": "DX"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 81,
+        "x": -1,
+        "y": 3365
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/dark-factory/",
+      "tag": "a",
+      "text": "Dark factory"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 99,
+        "x": -1,
+        "y": 3401
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/design-concept/",
+      "tag": "a",
+      "text": "Design concept"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 51,
+        "x": -1,
+        "y": 3437
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/grilling/",
+      "tag": "a",
+      "text": "Grilling"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 95,
+        "x": -1,
+        "y": 3473
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/human-review/",
+      "tag": "a",
+      "text": "Human review"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 124,
+        "x": -1,
+        "y": 3509
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/human-in-the-loop/",
+      "tag": "a",
+      "text": "Human-in-the-loop"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 76,
+        "x": -1,
+        "y": 3545
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/prototyping/",
+      "tag": "a",
+      "text": "Prototyping"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 107,
+        "x": -1,
+        "y": 3581
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/software-factory/",
+      "tag": "a",
+      "text": "Software factory"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 78,
+        "x": -1,
+        "y": 3617
+      },
+      "color": "#1a1a19",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:55569/terms/vibe-coding/",
+      "tag": "a",
+      "text": "Vibe coding"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 3653
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "7 sections describing how agentic coding works."
+    }
+  ],
+  "page": {
+    "h": 900,
+    "w": 1440
+  },
+  "text": "Skip to main content AN OPEN GLOSSARY AI CODING DICTIONARY The 3D map needs WebGL, which isn't available in this browser. Every term is also a plain page, and agents can read it all as Markdown. Browse all terms Markdown for agents The AI Coding Dictionary The vocabulary of AI coding, in plain English. Agents can read it all at /llms.txt or /api/terms.json. The Model AI A shifting umbrella word for whatever computers have recently learned to do impressively. Today it mostly means large language models. Cache tokens Input tokens the provider recognises from an earlier request and bills at a steep discount instead of processing them again. Effort A setting for how much the model thinks before it answers. Higher effort spends more output tokens to improve its odds on hard problems. Harness The software wrapped around a model that turns it into an agent: tools, system prompt, permissions, context management and hooks. Inference Using a trained model to produce output. It happens on every request, and the model's parameters do not change while it runs. Input tokens Everything the harness sends to the model on a request, counted in tokens. Cheaper per token than output. Model provider request A single round trip: the harness sends the full context to the provider and gets back one response. Model provider The service that runs a model for you. Often a cloud company, but it can just as well be software on your own machine. Model The trained parameters themselves. It predicts the next token and nothing more; on its own it can neither act nor remember. Next-token prediction The model's one trick: pick a likely next token given everything before it, append it, and repeat. Non-determinism Asking the same thing twice can give two different answers. It comes from sampling and from how providers batch requests. Output tokens The tokens the model writes back. They cost more than input because each one takes a full step of computation. Parameters The billions of numbers inside a model, adjusted during training. Everything it knows is stored in them. Also called weights. Prefix cache The provider's short-term memory of recently processed context, letting a request skip work when it begins the same way as an earlier one. Token The small chunk of text a model reads and writes — often a word or part of one. Limits, prices and speed are all counted in tokens. Training The long, expensive process that sets a model's parameters by showing it vast amounts of text and nudging it to predict better. Sessions, Context Windows & Turns Agent A model wired into a harness with tools, a system prompt and a context window, taking turns with a person to get work done. Context window The full text the model can see on a request. It has a fixed size and is the only way the model perceives anything. Context The information an agent has to hand right now that actually matters for the task. Session One continuous stretch of work with an agent. It starts empty, builds up, and ends when cleared, closed or compacted. Stateful Keeps information from one step to the next. A session is stateful across its turns. Stateless Keeps nothing between steps. Every model request starts from scratch, and by default every new session does too. System prompt The standing instructions the harness places at the top of every request — the agent's job description. Turn One message from the user plus everything the agent does in reply, until it hands control back. Tools & Environment Agent mode A named preset that pairs a permission mode with extra instructions — “plan only”, “edit freely”. It can change mid-session. Environment Everything outside the harness that the agent can look at or change: files, terminals, browsers, services. Filesystem The folders and files an agent reads, writes and runs commands in. The usual environment for a coding agent. MCP Model Context Protocol: a standard way to plug outside tool servers into a harness, so an agent gains tools it did not ship with. Permission mode The part of an agent mode that decides which tool calls run on their own and which stop to ask you first. Permission request The prompt the harness shows before running a tool call that is not pre-approved. It keeps a person in control. Sandbox A walled-off place for the agent to work — a container, virtual machine or restricted shell — so mistakes stay contained. Tool call Text the model writes that names a tool and its arguments. Nothing happens until the harness reads it and runs it. Tool result What comes back after the harness runs a tool call: file contents, command output or an error. The agent's only view of the world. Tool A function the harness offers the agent — read a file, write a file, run a command, search. How an agent senses and acts. Failure Modes Attention budget Each token has a limited amount of influence to spread over the rest of the context. The budget does not grow when the context does. Attention degradation As a session grows, each token's attention is split across more competitors and the important connections get weaker. Attention relationship The link between two tokens. Meaningful pairs sway each other strongly; unrelated pairs barely do. N tokens make roughly N² pairs. Contextual knowledge Facts the agent can read straight from its context right now, rather than recall from training. Hallucination Output that is confidently wrong. Either it invents facts, or it drifts away from what is actually in its context. Knowledge cutoff The date after which the model learned nothing. Libraries and APIs newer than that are traps unless you give it the docs. Parametric knowledge What the model knows from training, stored in its parameters. Broad, but frozen in time. Smart zone The early stretch of a session when the agent is sharp. Push on too long and it slides into a dumb zone of forgetful, careless work. Sycophancy Output that is confidently agreeable. Training rewarded answers people liked, and people like being agreed with. Handoffs Autocompact Compaction the harness starts on its own when the context window is nearly full. Clearing Ending the current session and starting fresh, with an empty context window. Compaction A handoff done in place: the session's history is summarised and the summary seeds a new session. Detail is traded for room. Handoff artifact A document one session writes so another can pick up the work — notes, a plan, a ticket. Handoff Passing context from one session to another, one way only. The carrier can be a document, a compaction or something else. Primary source The original material itself — code, transcripts, raw data. Complete and authoritative, but costly to load into context. Secondary source A description of a primary source, written by a person or an agent. Cheap to read, but only as good as its author. Spec A document describing what to build and why, written before the work starts. Usually broken into tickets. Ticket A handoff artifact sized for one session of work. It can stand alone or belong to a spec, and can block or depend on other tickets. Memory and Steering AGENTS.md A file in the project that the harness loads into context at the start of each session — standing instructions for agents. Context pointer A reference in one document to another, so the agent can fetch it only when the task calls for it. Home Repo A single repository holding your skills, AGENTS.md and shared notes, pointing to your other projects. You start your agent from there. Memory system A way to make an agent remember across sessions by saving notes into the environment and loading them back next time. Progressive disclosure Showing the agent only what it needs now, with pointers to the rest. An idea borrowed from interface design. Skill A packaged capability — instructions plus scripts — that stays out of context until a pointer pulls it in for the task. Subagent An agent launched by another agent through a tool call. It works in its own session and returns a single result. Patterns of Work AFK Away from keyboard: start a session and let the agent work unattended. AX Agent experience: how well a project is set up for an agent to succeed — fast checks, clear structure, room in the context. Automated check A deterministic test that runs in the environment — unit tests, type checks, linters, builds, hooks. Pass or fail, no opinions. Automated review One agent reviewing another agent's work, often with a different model or prompt. It forms an opinion, so results vary. DX Developer experience: how easy a codebase and its tools make it for people to do good work — docs, fast feedback, clear errors. Dark factory A codebase, or part of one, where a software factory writes all the code and no person ever reads it. Design concept The shared idea of what is being built, held by both user and agent, separate from any document or code. Grilling A way to shape a design concept: the agent questions you one decision at a time until the idea is clear. Human review A person reading the code an agent produced and judging it. Reading the diff counts; reading the summary does not. Human-in-the-loop Working alongside the agent during a session — steering, reviewing and correcting as it goes. Prototyping Getting the agent to build a quick, rough version when talking is not enough and you need something real to react to. Software factory A setup where events, not people, start agent sessions, so more work runs unattended and human time goes where it counts. Vibe coding Accepting the agent's code without reviewing it, treating the diff as a black box. 7 sections describing how agentic coding works.",
+  "title": "The AI Coding Dictionary",
+  "unreadable_stylesheets": 0,
+  "url": "http://127.0.0.1:55569/",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

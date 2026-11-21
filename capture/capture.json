@@ -1,0 +1,1365 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "main": 1
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "https://www.aicodingdictionary.com/_next/static/immutable/media/ServerMono_Regular-s.p.3svvteyy0qp2u.woff2"
+    ],
+    "images": [],
+    "inline_scripts": 26,
+    "requests": [
+      {
+        "bytes": 25112,
+        "type": "link",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/media/ServerMono_Regular-s.p.3svvteyy0qp2u.woff2"
+      },
+      {
+        "bytes": 9263,
+        "type": "link",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/435wermyueh-6.css"
+      },
+      {
+        "bytes": 4873,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/turbopack-3h_ctkfaeun7f.js"
+      },
+      {
+        "bytes": 5159,
+        "type": "link",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1v0arsbhbinah.css"
+      },
+      {
+        "bytes": 48564,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/08x4ypcaobge2.js"
+      },
+      {
+        "bytes": 81208,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/34lek8wnqat0s.js"
+      },
+      {
+        "bytes": 4045,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0m924y3joub6h.js"
+      },
+      {
+        "bytes": 1176,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3pm_kl7s0jh8n.js"
+      },
+      {
+        "bytes": 8337,
+        "type": "link",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1g5lp-6s-qqw-.js"
+      },
+      {
+        "bytes": 989,
+        "type": "link",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0pfxyft55vvik.css"
+      },
+      {
+        "bytes": 1752,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2yr0i-1km6l8o.js"
+      },
+      {
+        "bytes": 8785,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0koiwprb89ghz.js"
+      },
+      {
+        "bytes": 23842,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0pn0knnmxxi5m.js"
+      },
+      {
+        "bytes": 1024,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2jzgmxpbpjlba.js"
+      },
+      {
+        "bytes": 10090,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1qjif3r7x7df4.js"
+      },
+      {
+        "bytes": 2076,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3avdk6ew_2rz4.js"
+      },
+      {
+        "bytes": 103250,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1l5l7y8pxj76i.js"
+      },
+      {
+        "bytes": 68673,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3daz1_4hpulr0.js"
+      },
+      {
+        "bytes": 91742,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2ur02zw8ws_vi.js"
+      },
+      {
+        "bytes": 144075,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3e43k9h925809.js"
+      },
+      {
+        "bytes": 26187,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/19jnqtj4vja-y.js"
+      },
+      {
+        "bytes": 696,
+        "type": "link",
+        "url": "https://www.aicodingdictionary.com/manifest.webmanifest"
+      },
+      {
+        "bytes": 29245,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3n6t_5pgbbise.js"
+      },
+      {
+        "bytes": 1208,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/440qq30y1lkdc.js"
+      },
+      {
+        "bytes": 16541,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1191c2wtnm3c2.js"
+      },
+      {
+        "bytes": 14426,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1-8l96h322f0e.js"
+      },
+      {
+        "bytes": 28277,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2pjji_9d0kky8.js"
+      },
+      {
+        "bytes": 188072,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3p0cl8hh3y0xf.js"
+      },
+      {
+        "bytes": 99650,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/03rzr-9g-h6iu.js"
+      },
+      {
+        "bytes": 480,
+        "type": "link",
+        "url": "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1itc7r4yf_-ao.css"
+      },
+      {
+        "bytes": 2380,
+        "type": "script",
+        "url": "https://www.aicodingdictionary.com/ee73edb21143a49f/script.js"
+      },
+      {
+        "bytes": 929467,
+        "type": "fetch",
+        "url": "https://cdn.jsdelivr.net/gh/snd-lib/snd-lib@v1.2.4/assets/sounds/sprite/01/audioSprite.mp3"
+      },
+      {
+        "bytes": 683,
+        "type": "other",
+        "url": "https://www.aicodingdictionary.com/icon.svg"
+      },
+      {
+        "bytes": 683,
+        "type": "other",
+        "url": "https://www.aicodingdictionary.com/icon.svg"
+      }
+    ],
+    "scripts": [
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/34lek8wnqat0s.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/08x4ypcaobge2.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/turbopack-3h_ctkfaeun7f.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0m924y3joub6h.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3pm_kl7s0jh8n.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0pn0knnmxxi5m.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0koiwprb89ghz.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/19jnqtj4vja-y.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1qjif3r7x7df4.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3e43k9h925809.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2ur02zw8ws_vi.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1l5l7y8pxj76i.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3daz1_4hpulr0.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2yr0i-1km6l8o.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3avdk6ew_2rz4.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2jzgmxpbpjlba.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3n6t_5pgbbise.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/440qq30y1lkdc.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1191c2wtnm3c2.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/2pjji_9d0kky8.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1-8l96h322f0e.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/3p0cl8hh3y0xf.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/03rzr-9g-h6iu.js",
+      "https://www.aicodingdictionary.com/ee73edb21143a49f/script.js",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1g5lp-6s-qqw-.js"
+    ],
+    "stylesheets": [
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/435wermyueh-6.css",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1v0arsbhbinah.css",
+      "https://www.aicodingdictionary.com/_next/static/immutable/chunks/1itc7r4yf_-ao.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 1,
+      "px": 480,
+      "query": "max-width 480px"
+    },
+    {
+      "count": 9,
+      "px": 800,
+      "query": "min-width 800px"
+    },
+    {
+      "count": 6,
+      "px": 800,
+      "query": "max-width 800px"
+    },
+    {
+      "count": 1,
+      "px": 801,
+      "query": "min-width 801px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 2,
+        "value": "#eaeae8"
+      },
+      {
+        "count": 1,
+        "value": "#1919191f"
+      },
+      {
+        "count": 1,
+        "value": "#1a1a19"
+      }
+    ],
+    "css_variables": {
+      "--color-black": "#000",
+      "--color-blue": "#0070f3",
+      "--color-contrast": "#1a1a19",
+      "--color-green": "#0f8",
+      "--color-ink": "#1a1a19",
+      "--color-paper": "#eaeae8",
+      "--color-pink": "#ff0080",
+      "--color-primary": "#eaeae8",
+      "--color-purple": "#7928ca",
+      "--color-red": "#e30613",
+      "--color-secondary": "#1a1a19",
+      "--color-white": "#fff",
+      "--column-width": "calc((var(--layout-width) - (var(--columns) - 1) * var(--gap)) / var(--columns))",
+      "--columns": "12",
+      "--device-height": "816",
+      "--device-width": "1440",
+      "--duration": ".4s",
+      "--duration-fast": ".2s",
+      "--duration-slow": ".8s",
+      "--ease-gleasing": "cubic-bezier(.4, 0, 0, 1)",
+      "--ease-in-circ": "cubic-bezier(.6, .04, .98, .335)",
+      "--ease-in-cubic": "cubic-bezier(.55, .055, .675, .19)",
+      "--ease-in-expo": "cubic-bezier(.95, .05, .795, .035)",
+      "--ease-in-out-circ": "cubic-bezier(.785, .135, .15, .86)",
+      "--ease-in-out-cubic": "cubic-bezier(.645, .045, .355, 1)",
+      "--ease-in-out-expo": "cubic-bezier(1, 0, 0, 1)",
+      "--ease-in-out-quad": "cubic-bezier(.455, .03, .515, .955)",
+      "--ease-in-out-quart": "cubic-bezier(.77, 0, .175, 1)",
+      "--ease-in-out-quint": "cubic-bezier(.86, 0, .07, 1)",
+      "--ease-in-quad": "cubic-bezier(.55, .085, .68, .53)",
+      "--ease-in-quart": "cubic-bezier(.895, .03, .685, .22)",
+      "--ease-in-quint": "cubic-bezier(.755, .05, .855, .06)",
+      "--ease-out-circ": "cubic-bezier(.075, .82, .165, 1)",
+      "--ease-out-cubic": "cubic-bezier(.215, .61, .355, 1)",
+      "--ease-out-expo": "cubic-bezier(.19, 1, .22, 1)",
+      "--ease-out-quad": "cubic-bezier(.25, .46, .45, .94)",
+      "--ease-out-quart": "cubic-bezier(.165, .84, .44, 1)",
+      "--ease-out-quint": "cubic-bezier(.23, 1, .32, 1)",
+      "--font-mono": "var(--next-font-mono)",
+      "--gap": "calc(((16 * 100) / var(--device-width)) * 1vw)",
+      "--header-height": "calc(((98 * 100) / var(--device-width)) * 1vw)",
+      "--layout-width": "calc(100vw - (2 * var(--safe)))",
+      "--lightningcss-dark": "",
+      "--lightningcss-light": "initial",
+      "--line": "color-mix(in srgb, var(--color-secondary) 14%, transparent)",
+      "--line-strong": "color-mix(in srgb, var(--color-secondary) 28%, transparent)",
+      "--safe": "calc(((16 * 100) / var(--device-width)) * 1vw)",
+      "--section-ink": "#1a1a19",
+      "--section-paper": "#f2f2f0",
+      "--spacing-0": "0",
+      "--spacing-gap": "var(--gap)",
+      "--spacing-safe": "var(--safe)",
+      "--surface": "color-mix(in srgb, var(--color-secondary) 4%, var(--color-primary))",
+      "--surface-2": "color-mix(in srgb, var(--color-secondary) 8%, var(--color-primary))"
+    },
+    "font_faces": [
+      {
+        "family": "mono",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "mono Fallback",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "normal"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 156,
+        "value": "16px"
+      },
+      {
+        "count": 2,
+        "value": "14.4px"
+      },
+      {
+        "count": 1,
+        "value": "9.92px"
+      },
+      {
+        "count": 1,
+        "value": "49.6px"
+      },
+      {
+        "count": 1,
+        "value": "15.36px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 157,
+        "value": "400"
+      },
+      {
+        "count": 3,
+        "value": "500"
+      },
+      {
+        "count": 1,
+        "value": "700"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 156,
+        "value": "Times"
+      },
+      {
+        "count": 4,
+        "value": "\"Helvetica Neue\", Helvetica, Arial, system-ui, sans-serif"
+      },
+      {
+        "count": 1,
+        "value": "mono, \"mono Fallback\", ui-monospace, SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "303.354px"
+      },
+      {
+        "count": 1,
+        "value": "368px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 2,
+        "value": "999px"
+      },
+      {
+        "count": 1,
+        "value": "2px"
+      }
+    ],
+    "shadows": [],
+    "spacing": [
+      {
+        "count": 5,
+        "value": "8px"
+      },
+      {
+        "count": 4,
+        "value": "-1px"
+      },
+      {
+        "count": 4,
+        "value": "32px"
+      },
+      {
+        "count": 4,
+        "value": "18px"
+      },
+      {
+        "count": 2,
+        "value": "9.6px"
+      },
+      {
+        "count": 1,
+        "value": "17.6px"
+      },
+      {
+        "count": 1,
+        "value": "25.6px"
+      },
+      {
+        "count": 1,
+        "value": "24px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 157,
+        "value": "#1a1a19"
+      },
+      {
+        "count": 1,
+        "value": "#1a1a1a61"
+      },
+      {
+        "count": 1,
+        "value": "#1b1a1abd"
+      },
+      {
+        "count": 1,
+        "value": "#eaeae8"
+      },
+      {
+        "count": 1,
+        "value": "#1b1a1ad1"
+      }
+    ]
+  },
+  "forms": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "The AI Coding Dictionary"
+    },
+    {
+      "level": 2,
+      "text": "The Model"
+    },
+    {
+      "level": 2,
+      "text": "Sessions, Context Windows & Turns"
+    },
+    {
+      "level": 2,
+      "text": "Tools & Environment"
+    },
+    {
+      "level": 2,
+      "text": "Failure Modes"
+    },
+    {
+      "level": 2,
+      "text": "Handoffs"
+    },
+    {
+      "level": 2,
+      "text": "Memory and Steering"
+    },
+    {
+      "level": 2,
+      "text": "Patterns of Work"
+    },
+    {
+      "level": 1,
+      "text": "AI CODING DICTIONARY"
+    },
+    {
+      "level": 1,
+      "text": "The AI Coding Dictionary"
+    },
+    {
+      "level": 2,
+      "text": "The Model"
+    },
+    {
+      "level": 2,
+      "text": "Sessions, Context Windows & Turns"
+    },
+    {
+      "level": 2,
+      "text": "Tools & Environment"
+    },
+    {
+      "level": 2,
+      "text": "Failure Modes"
+    },
+    {
+      "level": 2,
+      "text": "Handoffs"
+    },
+    {
+      "level": 2,
+      "text": "Memory and Steering"
+    },
+    {
+      "level": 2,
+      "text": "Patterns of Work"
+    }
+  ],
+  "health": {
+    "errors": [],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#eaeae8",
+          "column": {
+            "max_w": 303,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 303,
+            "x": 568
+          },
+          "h": 900,
+          "heading": "AI CODING DICTIONARY",
+          "pad": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "per_row": 1,
+          "tag": "main",
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "h": 594,
+          "heading": "The Model",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 35
+        },
+        {
+          "h": 306,
+          "heading": "Sessions, Context Windows & Turns",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 629
+        },
+        {
+          "h": 378,
+          "heading": "Tools & Environment",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 935
+        },
+        {
+          "h": 342,
+          "heading": "Failure Modes",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1313
+        },
+        {
+          "h": 342,
+          "heading": "Handoffs",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1655
+        },
+        {
+          "h": 270,
+          "heading": "Memory and Steering",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1997
+        },
+        {
+          "h": 486,
+          "heading": "Patterns of Work",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2267
+        }
+      ],
+      "page_h": 900,
+      "page_w": 1440,
+      "type": {
+        "body": 10,
+        "h1": 50,
+        "h2": 16,
+        "h3": 0
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#eaeae8",
+          "column": {
+            "max_w": 244,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 244,
+            "x": 262
+          },
+          "h": 900,
+          "heading": "AI CODING DICTIONARY",
+          "pad": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 768,
+          "y": 0
+        },
+        {
+          "h": 594,
+          "heading": "The Model",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 35
+        },
+        {
+          "h": 306,
+          "heading": "Sessions, Context Windows & Turns",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 629
+        },
+        {
+          "h": 378,
+          "heading": "Tools & Environment",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 935
+        },
+        {
+          "h": 342,
+          "heading": "Failure Modes",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1313
+        },
+        {
+          "h": 342,
+          "heading": "Handoffs",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1655
+        },
+        {
+          "h": 270,
+          "heading": "Memory and Steering",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1997
+        },
+        {
+          "h": 486,
+          "heading": "Patterns of Work",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2267
+        }
+      ],
+      "page_h": 900,
+      "page_w": 768,
+      "type": {
+        "body": 10,
+        "h1": 40,
+        "h2": 16,
+        "h3": 0
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#eaeae8",
+          "column": {
+            "max_w": 166,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 166,
+            "x": 112
+          },
+          "h": 900,
+          "heading": "AI CODING DICTIONARY",
+          "pad": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "per_row": 1,
+          "tag": "main",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "h": 594,
+          "heading": "The Model",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 35
+        },
+        {
+          "h": 306,
+          "heading": "Sessions, Context Windows & Turns",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 629
+        },
+        {
+          "h": 378,
+          "heading": "Tools & Environment",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 935
+        },
+        {
+          "h": 342,
+          "heading": "Failure Modes",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1313
+        },
+        {
+          "h": 342,
+          "heading": "Handoffs",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1655
+        },
+        {
+          "h": 270,
+          "heading": "Memory and Steering",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 1997
+        },
+        {
+          "h": 486,
+          "heading": "Patterns of Work",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 1,
+          "y": 2267
+        }
+      ],
+      "page_h": 900,
+      "page_w": 390,
+      "type": {
+        "body": 8,
+        "h1": 27,
+        "h2": 16,
+        "h3": 0
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "https://www.aicodingdictionary.com/#main-content",
+      "text": "Skip to main content"
+    },
+    {
+      "href": "https://www.aihero.dev/ai-coding-dictionary",
+      "text": "aihero.dev"
+    },
+    {
+      "href": "https://www.aihero.dev/s/dictionary",
+      "text": "Read on aihero.dev"
+    },
+    {
+      "href": "https://github.com/mattpocock/dictionary-of-ai-coding",
+      "text": "Markdown on GitHub"
+    },
+    {
+      "href": "https://www.aihero.dev/ai-coding-dictionary",
+      "text": "aihero.dev"
+    }
+  ],
+  "meta": {
+    "description": "The words people throw around when they talk about AI coding. Tokens, context windows, agents, handoffs. Defined plainly and wired into a 3D graph you can explore term by term. From aihero.dev.",
+    "icons": [
+      "https://www.aicodingdictionary.com/icon.svg?icon.2s30crglx9oi9.svg",
+      "https://www.aicodingdictionary.com/apple-icon?55c96e478738b6f6"
+    ],
+    "og_image": "https://www.aicodingdictionary.com/opengraph-image.jpg?opengraph-image.2xitcnvb2imvj.jpg",
+    "og_title": "The AI Coding Dictionary",
+    "theme_color": "#eaeae8"
+  },
+  "outline": [
+    {
+      "box": {
+        "h": 1,
+        "w": 1,
+        "x": -1,
+        "y": -1
+      },
+      "class": "sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-9999 focus:rounded focus:bg-black focus:px-4 focu",
+      "color": "#1a1a19",
+      "depth": 2,
+      "font": "16px 400",
+      "href": "https://www.aicodingdictionary.com/#main-content",
+      "tag": "a",
+      "text": "Skip to main content"
+    },
+    {
+      "background": "#eaeae8",
+      "box": {
+        "h": 900,
+        "w": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "class": "VglryW_root",
+      "color": "#1a1a19",
+      "depth": 2,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "main"
+    },
+    {
+      "box": {
+        "h": 11,
+        "w": 128,
+        "x": 656,
+        "y": 295
+      },
+      "class": "VglryW_credit",
+      "color": "#1a1a1a61",
+      "depth": 4,
+      "font": "9.92px 500",
+      "tag": "p",
+      "text": "MATT POCOCK’S"
+    },
+    {
+      "box": {
+        "h": 107,
+        "w": 303,
+        "x": 568,
+        "y": 314
+      },
+      "class": "VglryW_title",
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "49.6px 700",
+      "tag": "h1",
+      "text": "AI CODING DICTIONARY"
+    },
+    {
+      "box": {
+        "h": 71,
+        "w": 368,
+        "x": 536,
+        "y": 466
+      },
+      "class": "VglryW_message",
+      "color": "#1b1a1abd",
+      "depth": 4,
+      "font": "15.36px 400",
+      "tag": "p",
+      "text": "The 3D graph needs WebGL, which isn't available in this browser. Every term is also on AI Hero, and the source is Markdown on GitHub."
+    },
+    {
+      "background": "#1a1a19",
+      "box": {
+        "h": 44,
+        "w": 187,
+        "x": 522,
+        "y": 561
+      },
+      "class": "VglryW_primary",
+      "color": "#eaeae8",
+      "depth": 5,
+      "font": "14.4px 500",
+      "href": "https://www.aihero.dev/s/dictionary",
+      "tag": "a",
+      "text": "Read on aihero.dev"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 15,
+        "x": 675,
+        "y": 576
+      },
+      "color": "#eaeae8",
+      "depth": 6,
+      "font": "14.4px 500",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 200,
+        "x": 718,
+        "y": 561
+      },
+      "class": "VglryW_secondary",
+      "color": "#1b1a1ad1",
+      "depth": 5,
+      "font": "14.4px 500",
+      "href": "https://github.com/mattpocock/dictionary-of-ai-coding",
+      "tag": "a",
+      "text": "Markdown on GitHub"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 15,
+        "x": 885,
+        "y": 576
+      },
+      "color": "#1b1a1ad1",
+      "depth": 6,
+      "font": "14.4px 500",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 1,
+        "w": 1,
+        "x": -1,
+        "y": -1
+      },
+      "class": "sr-only",
+      "color": "#1a1a19",
+      "depth": 2,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "article"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": -1
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "font": "16px 400",
+      "tag": "h1",
+      "text": "The AI Coding Dictionary"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 17
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The vocabulary of AI coding, in plain English. Source: aihero.dev."
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 67,
+        "x": 354,
+        "y": 17
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "href": "https://www.aihero.dev/ai-coding-dictionary",
+      "tag": "a",
+      "text": "aihero.dev"
+    },
+    {
+      "box": {
+        "h": 594,
+        "w": 1,
+        "x": -1,
+        "y": 35
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 35
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "The Model"
+    },
+    {
+      "box": {
+        "h": 306,
+        "w": 1,
+        "x": -1,
+        "y": 629
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 629
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Sessions, Context Windows & Turns"
+    },
+    {
+      "box": {
+        "h": 378,
+        "w": 1,
+        "x": -1,
+        "y": 935
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 935
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Tools & Environment"
+    },
+    {
+      "box": {
+        "h": 342,
+        "w": 1,
+        "x": -1,
+        "y": 1313
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 1313
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Failure Modes"
+    },
+    {
+      "box": {
+        "h": 342,
+        "w": 1,
+        "x": -1,
+        "y": 1655
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 1655
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Handoffs"
+    },
+    {
+      "box": {
+        "h": 270,
+        "w": 1,
+        "x": -1,
+        "y": 1997
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 1997
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Memory and Steering"
+    },
+    {
+      "box": {
+        "h": 486,
+        "w": 1,
+        "x": -1,
+        "y": 2267
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 2267
+      },
+      "color": "#1a1a19",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "h2",
+      "text": "Patterns of Work"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 1,
+        "x": -1,
+        "y": 2753
+      },
+      "color": "#1a1a19",
+      "depth": 3,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "7 sections describing how agentic coding works."
+    }
+  ],
+  "page": {
+    "h": 900,
+    "w": 1440
+  },
+  "text": "Skip to main content MATT POCOCK’S AI CODING DICTIONARY The 3D graph needs WebGL, which isn't available in this browser. Every term is also on AI Hero, and the source is Markdown on GitHub. Read on aihero.dev Markdown on GitHub The AI Coding Dictionary The vocabulary of AI coding, in plain English. Source: aihero.dev. The Model AI A moving label, not a technology. Points at whatever computers can newly, impressively do — right now, large language models. Cache tokens Input tokens the provider has cached from a previous request via its prefix cache, billed at a much lower rate. Effort A dial for how much reasoning the model does before it answers. More effort spends more output tokens for a better shot at hard problems. Harness Everything around the model that turns it into an agent: tools, system prompt, context-window management, permissions, hooks. Inference Running a trained model to generate output — what happens on every model provider request. Parameters stay fixed. Input tokens Tokens the harness sends on each model provider request. Billed at a lower rate than output tokens. Model provider request One round-trip from the harness to the model provider. The harness sends context; the provider returns one response. Model provider Whatever serves a model for inference. Usually remote (Anthropic, OpenAI, Google), but can also be local (Ollama, llama.cpp). Model The parameters. Stateless — does next-token prediction and nothing else. Cannot do anything agentic on its own. Next-token prediction What the model actually does. Samples one next token from the context, appends it, and runs again. Its only mode of operation. Non-determinism The same input can produce different output. A property of how models generate text and how providers serve requests. Output tokens Tokens the model generates back. Billed at a higher rate than input tokens, since they cost more compute to produce. Parameters The numbers inside a model — often billions — tuned during training. Everything the model knows lives in them. Also called weights. Prefix cache The provider-side store that lets consecutive requests skip re-processing a shared prefix, billing those tokens at a lower rate. Token The atomic unit a model reads and writes. Roughly word-sized but not exactly. Context window size, cost, and latency all count tokens. Training The process that sets a model's parameters by exposing it to vast amounts of text and adjusting to improve next-token prediction. Sessions, Context Windows & Turns Agent A model harnessed with tools, a system prompt, and a context window, that takes turns with a user. The model in motion. Context window Everything the model sees on each model provider request. Finite, model-specific, the only surface through which the model perceives. Context The relevant information the agent has access to right now — what the agent knows that's pertinent to the task. Session One bounded run of interaction with an agent. Starts empty, accumulates, ends when cleared, closed, or compacted into a fresh session. Stateful Carries information forward. Sessions are stateful across turns; agents can be made stateful across sessions via a memory system. Stateless Carries no information forward. The model is stateless across requests; an agent is stateless across sessions by default. System prompt The instructions the harness prepends to every model provider request — the agent's standing brief. Usually stable across a session. Turn One user message plus everything the agent does in response, up until it yields back to the user. Contains one or more provider requests. Tools & Environment Agent mode A preset bundling a permission mode with behavioral instructions injected into the system prompt. Can flip mid-session. Environment The world the agent acts on — anything outside the harness that the agent perceives via tool results and changes via tool calls. Filesystem A tree of files and directories the agent reads from, writes to, and executes within — the default environment for a coding agent. MCP A protocol for plugging external tool servers into a harness — how an agent gets tools beyond what the harness ships with. Permission mode The permission-gating slice of an agent mode — which tool calls trigger a permission request and which run automatically. Permission request What the harness shows the user before executing a tool call that isn't pre-approved. The mechanism for putting a human in the loop. Sandbox An isolated environment the agent runs inside — container, VM, or restricted shell. Limits the blast radius of agent actions. Tool call The model's output naming a tool and its arguments — just structured text. The harness has to read it and execute. Tool result What the harness sends back after executing a tool call — file contents, output, or error. The agent's only view of the environment. Tool A function the harness exposes for the agent to call — Read, Write, Bash, Search. How an agent perceives and acts on the environment. Failure Modes Attention budget Each token has a finite amount of influence to distribute across the rest of the context. Per-token, doesn't grow when context does. Attention degradation As a session grows, each token's attention budget spreads across more competitors; signal on meaningful relationships shrinks. Attention relationship The pairing between two tokens — meaningful pairs influence each other more than unrelated ones. A context of N tokens has ~N² of these. Contextual knowledge Facts the agent can read directly from the context right now. Counterpart to parametric knowledge. Hallucination Confidently-wrong model output. Two flavors: factuality (invented facts) and faithfulness (drift from loaded context). Knowledge cutoff The date past which a model has no parametric knowledge. Post-cutoff libraries and APIs are fabrication traps unless docs are loaded. Parametric knowledge What the model knows from training, stored in its parameters. Frozen at training time. Counterpart to contextual knowledge. Smart zone Early in a session the agent is sharp and focused. As the session grows it drifts into a dumb zone: sloppier, forgetful, more mistakes. Sycophancy Confidently agreeable model output. Caused by training that shaped the model to favor answers humans liked — including agreement. Handoffs Autocompact Compaction triggered automatically by the harness when the context window approaches full. Clearing Ending the current session and starting a fresh one. The next message begins with an empty session and an empty context window. Compaction A handoff done in-memory: the previous session's history is summarised and seeds a fresh session. Lossy — detail traded for headroom. Handoff artifact A document used as the carry mechanism for a handoff — written by one session to be read by another. Handoff Transferring agent context from one session to another, with no return path. Carry mechanism varies — artifact, compaction, others. Primary source The thing itself — code, transcripts, raw data. Complete and authoritative, but expensive to load into context. Secondary source An account of a primary source, one step removed — summaries, docs, compaction summaries. Cheap to load, lossy by construction. Spec A handoff artifact describing a multi-session piece of work — what's being built, not how each session does its share. Made of tickets. Ticket A handoff artifact scoping one session of work. Stands alone or hangs off a spec. Can block or be blocked by sibling tickets. Memory and Steering AGENTS.md A file in the environment that the harness loads into the context window at session start — the project's standing brief to the agent. Context pointer A mention in one document that points to another, so the agent can pull it into context only when the task calls for it. Home Repo One repo that holds your skills, AGENTS.md and shared docs, and points at your other repos. You run your agent from it. Memory system A system that attempts to make an agent stateful across sessions by persisting to the environment and reloading at session start. Progressive disclosure Loading only the context an agent needs right now, with context pointers to the rest. Borrowed from UI design. Skill A teachable capability bundled as a unit — kept out of the context window until a context pointer pulls it in for the task at hand. Subagent An agent spawned by another agent via a tool call. Runs in its own session, reports a single tool result. Cannot spawn further subagents. Patterns of Work AFK A working pattern where the user kicks off a session and leaves the agent to run unattended (away from keyboard). AX Agent experience: how well the environment is set up for an agent to do good work — checks, architecture, and free context. Automated check A deterministic verification that runs in the environment — tests, type checks, lints, build, pre-commit hooks. Pass/fail, no judgement. Automated review An agent reviewing another agent's work, often with a different model or system prompt. Non-deterministic: it forms a judgement. DX Developer experience: how easy a codebase and its toolchain make it for humans to do good work — docs, feedback speed, errors. Dark factory A codebase, or part of one, where a software factory writes the code and no human ever reviews it. Design concept The shared understanding of what's being built, held in common between user and agent but separate from any asset. Grilling A technique for developing a design concept: the agent interviews the user Socratically, one decision at a time. Human review The user reading the code the agent produced and forming a judgement on it. Reading the diff counts; reading the summary doesn't. Human-in-the-loop A working pattern where one or more humans pair with the agent during a session — reviewing, redirecting, or collaborating in real time. Prototyping Having the agent build a quick, rough version when conversation is too low-fidelity and you need a real artifact to talk about. Software factory A system of work where triggers, not humans, start agent sessions, so more work runs AFK and HITL time is saved for what needs it. Vibe coding A working pattern where the user accepts the agent's code without human review. The diff is treated as opaque. 7 sections describing how agentic coding works.",
+  "title": "The AI Coding Dictionary",
+  "unreadable_stylesheets": 0,
+  "url": "https://www.aicodingdictionary.com/",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}
