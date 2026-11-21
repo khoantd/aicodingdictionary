@@ -21,7 +21,10 @@ export default function TermsIndex() {
         <h1 className={s.title}>{SITE.name}</h1>
         <p className={s.def}>{SITE.tagline}</p>
         <div className={s.formats}>
-          <a className={s.primary} href="/agents/">
+          <a className={s.primary} href="/intro/">
+            Introduction
+          </a>
+          <a className={s.back} href="/agents/">
             Connect your agent
           </a>
           <a className={s.back} href="/llms.txt">

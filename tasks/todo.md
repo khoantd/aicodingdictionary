@@ -4,7 +4,8 @@
 
 ## Current sprint
 
-- [ ] _(add tasks from `/plan` or user request)_
+- [x] Add `/intro` introduction page and link from About / Fallback / terms / agents
+- [x] Add MCP setup + copyable agent integration prompt on `/intro`
 
 ## Backlog
 

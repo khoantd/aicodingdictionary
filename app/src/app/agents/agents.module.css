@@ -1,3 +1,9 @@
+.topLinks {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .step {
   margin-top: 2.4rem;
 }

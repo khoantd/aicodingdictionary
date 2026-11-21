@@ -523,6 +523,9 @@ function About({ onClose }: { onClose: () => void }) {
         <span className={s.popRule} />
         <p className={s.kicker}>For AI agents</p>
         <div className={s.pills}>
+          <a className={s.pill} href="/intro/">
+            Introduction
+          </a>
           <a className={s.pill} href="/agents/">
             Connect your agent
           </a>

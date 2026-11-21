@@ -22,7 +22,7 @@
 | Path | Purpose |
 |------|---------|
 | `app/` | The product — Next.js site (source in `app/src/`, static build in `app/out/`) |
-| `app/src/app/` | Routes: home, `/terms`, `/agents`, `llms.txt`, OpenAPI, API JSON/MD, MCP download |
+| `app/src/app/` | Routes: home, `/intro`, `/terms`, `/agents`, `llms.txt`, OpenAPI, API JSON/MD, MCP download |
 | `app/src/components/` | UI: `Experience` → `Atlas` / `Fallback`, `TermPanel`, `TermList`, `graph/GraphScene` |
 | `app/src/data/` | Dictionary (`terms.ts` ~72 terms, 7 sections) and guided `tours.ts` |
 | `app/src/lib/` | Search, markdown/JSON export, sound, in-page agent tools |
@@ -39,6 +39,7 @@
 - **3D map shell:** `app/src/components/Atlas.tsx` (search, panel, tours, agent tool registration)
 - **Renderer:** `app/src/components/graph/GraphScene.ts` (three.js force layout, edges, colors, tour path)
 - **Content:** `app/src/data/terms.ts`, `app/src/data/tours.ts`
+- **Introduction:** `app/src/app/intro/page.tsx`
 - **Agent connect page:** `app/src/app/agents/page.tsx`
 - **Static MCP file:** built/served under `/mcp/dictionary-mcp.mjs` (also `npm run mcp` from `app/`)
 - **Build config:** `app/next.config.mjs` (static export, trailing slash)

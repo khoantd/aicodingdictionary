@@ -34,12 +34,12 @@ export default function Fallback() {
           agents can read it all as Markdown.
         </p>
         <div className={s.actions}>
-          <a href="/terms/" className={s.primary}>
-            Browse all terms
+          <a href="/intro/" className={s.primary}>
+            Read the introduction
             <ExtIcon className={s.extIcon} />
           </a>
-          <a href="/llms.txt" className={s.secondary}>
-            Markdown for agents
+          <a href="/terms/" className={s.secondary}>
+            Browse all terms
             <ExtIcon className={s.extIcon} />
           </a>
         </div>

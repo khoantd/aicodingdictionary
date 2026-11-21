@@ -7,18 +7,21 @@
 | Field | Value |
 |-------|-------|
 | **Updated** | 2026-11-21 |
-| **Phase** | review |
+| **Phase** | build |
 | **Tool** | cursor |
-| **Persona** | _(onboarding)_ |
+| **Persona** | _(general)_ |
 
 ## Goal
 
-Understand and map the AI Coding Dictionary clone (Next.js + three.js 3D term map, agent-readable surfaces) so future work has a shared structure map.
+MCP setup intro on `/intro` with a copyable agent prompt for integration.
 
 ## Done
 
-- First-run `/understand` complete
-- Wrote `.agent/PROJECT.md` and `.agent/onboarding.complete`
+- First-run `/understand` complete; `.agent/PROJECT.md` exists
+- Added `/intro` introduction page (how to explore, sections, tours, keys, agents)
+- Linked from About modal, WebGL Fallback, `/terms`, and `/agents`
+- Expanded `/intro` with MCP setup: copyable agent prompt, download/register snippets, tool list
+- `cd app && npm run build` succeeds
 
 ## In progress
 
@@ -27,13 +30,15 @@ Understand and map the AI Coding Dictionary clone (Next.js + three.js 3D term ma
 
 ## Next
 
-1. Await user direction (deploy, polish tours/UI, content edits, etc.)
+1. Optional: visual check of `/intro` MCP section in browser
 2. Product lives under `app/`; build with `cd app && npm run build`
 
 ## Decisions
 
 - Dictionary wording is original (not a verbatim copy of aicodingdictionary.com)
 - Static export only — no server runtime / DB
+- Intro is a dedicated `/intro` route; home stays the 3D map
+- Intro reuses existing paper/ink + docs shell (not a new color system)
 
 ## Gotchas
 
@@ -48,4 +53,4 @@ Understand and map the AI Coding Dictionary clone (Next.js + three.js 3D term ma
 | Spec | `craft.json` (status/notes); study notes in `capture/` |
 | Tasks | `tasks/todo.md` |
 | Branch | _(local workspace)_ |
-| Key files | `app/src/data/terms.ts`, `app/src/components/Atlas.tsx`, `app/src/components/graph/GraphScene.ts` |
+| Key files | `app/src/app/intro/page.tsx`, `app/src/app/intro/intro.module.css`, `app/src/data/terms.ts`, `app/src/components/Atlas.tsx` |

@@ -35,9 +35,14 @@ export default function AgentsPage() {
       <div className={d.inner}>
         <div className={d.top}>
           <span className={d.kicker}>For AI agents</span>
-          <a className={d.back} href="/">
-            Open the 3D map
-          </a>
+          <div className={s.topLinks}>
+            <a className={d.back} href="/intro/">
+              Introduction
+            </a>
+            <a className={d.back} href="/">
+              Open the 3D map
+            </a>
+          </div>
         </div>
         <span className={d.rule} />
         <h1 className={d.title}>Connect your agent</h1>
