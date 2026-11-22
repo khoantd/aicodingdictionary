@@ -401,6 +401,23 @@ export default function Atlas({ onFail }: { onFail: () => void }) {
         </svg>
       </a>
 
+      {/* Connect your agent */}
+      <a
+        className={`${s.iconBtn} ${s.agentsBtn}`}
+        href="/agents/"
+        data-shift={shift ? "true" : "false"}
+        aria-label="Connect your agent"
+        title="Connect your agent"
+        onClick={() => blip("open")}
+      >
+        <svg className={s.icon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="12" cy="5.5" r="2" />
+          <circle cx="5.5" cy="18.5" r="2" />
+          <circle cx="18.5" cy="18.5" r="2" />
+          <path d="M12 7.5v3.2M12 10.7 7.2 16.2M12 10.7l4.8 5.5" />
+        </svg>
+      </a>
+
       {/* Guided tours */}
       <button
         type="button"

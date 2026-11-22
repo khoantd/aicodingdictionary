@@ -36,6 +36,9 @@ Ship Tier 1 growth features: SEO/share cards, agent install kits, discovery hygi
   - `TermDocBody` + `TermProse`; tour stops → `/terms/{slug}/`
   - Agents top nav includes `/terms/`; Tours dialog has share-card links
   - Build still green (309 pages)
+- **Nav chrome for `/agents` (2026-11-22):**
+  - `/intro` top bar: “Connect your agent” + map
+  - Atlas toolbar: agents icon between intro and tours
 
 ## In progress
 
@@ -44,7 +47,7 @@ Ship Tier 1 growth features: SEO/share cards, agent install kits, discovery hygi
 
 ## Next
 
-1. Optional: commit growth + dedupe changes
+1. Optional: commit growth + dedupe + agents nav chrome
 2. Optional: set `NEXT_PUBLIC_SITE_URL` on Vercel to the preferred canonical host
 3. Deferred: npm-packaged MCP, localStorage study kit, quizzes, accounts
 4. Royal Platform: deploy from **repo root** (or Git API), not from `app/` while Root Directory is `app`

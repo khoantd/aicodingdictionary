@@ -50,9 +50,14 @@ export default function IntroPage() {
       <div className={d.inner}>
         <div className={d.top}>
           <span className={d.kicker}>Introduction</span>
-          <a className={d.back} href="/">
-            Open the 3D map
-          </a>
+          <div className={s.topLinks}>
+            <a className={d.back} href="/agents/">
+              Connect your agent
+            </a>
+            <a className={d.back} href="/">
+              Open the 3D map
+            </a>
+          </div>
         </div>
         <span className={d.rule} />
 

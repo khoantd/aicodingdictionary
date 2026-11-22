@@ -1,3 +1,9 @@
+.topLinks {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .hero {
   position: relative;
   margin: clamp(1.6rem, 3.4vh, 2.6rem) 0 0;

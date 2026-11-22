@@ -120,18 +120,27 @@
   right: calc(32px + 3rem);
 }
 
-.toursBtn {
+.agentsBtn {
   position: fixed;
   top: 28px;
   right: calc(32px + 6rem);
+}
+
+.toursBtn {
+  position: fixed;
+  top: 28px;
+  right: calc(32px + 9rem);
 }
 
 @media (min-width: 800px) {
   .introBtn[data-shift="true"] {
     right: calc(33.3333vw + 32px + 3rem);
   }
-  .toursBtn[data-shift="true"] {
+  .agentsBtn[data-shift="true"] {
     right: calc(33.3333vw + 32px + 6rem);
+  }
+  .toursBtn[data-shift="true"] {
+    right: calc(33.3333vw + 32px + 9rem);
   }
 }
 
@@ -140,9 +149,13 @@
     top: 14px;
     right: calc(14px + 3rem);
   }
-  .toursBtn {
+  .agentsBtn {
     top: 14px;
     right: calc(14px + 6rem);
+  }
+  .toursBtn {
+    top: 14px;
+    right: calc(14px + 9rem);
   }
 }
 
