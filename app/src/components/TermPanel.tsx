@@ -80,7 +80,7 @@ export default function TermPanel({ term, open, expanded, onExpand, onOpen, onCl
   const paras = more ? term.full : term.full.slice(0, 1);
 
   const share = async () => {
-    const url = `${location.origin}/?term=${term.slug}`;
+    const url = `${location.origin}/share/term/${term.slug}/`;
     try {
       if (navigator.share && matchMedia("(hover: none)").matches) {
         await navigator.share({ title: term.name, text: term.def, url });

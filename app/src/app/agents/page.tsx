@@ -1,13 +1,27 @@
 import type { Metadata } from "next";
 import { SITE, TERMS } from "@/data/terms";
 import { TOURS } from "@/data/tours";
+import { absoluteUrl } from "@/lib/site";
 import d from "../terms/docs.module.css";
 import CodeBlock from "./CodeBlock";
 import s from "./agents.module.css";
 
 export const metadata: Metadata = {
   title: `Connect your agent — ${SITE.name}`,
-  description: "Give any AI agent the AI Coding Dictionary: an MCP server, Markdown and JSON files, and in-page tools.",
+  description: "Give any AI agent the AI Coding Dictionary: MCP install kits for Cursor, Claude Code, and Windsurf — plus Markdown and JSON files.",
+  alternates: { canonical: "/agents/" },
+  openGraph: {
+    title: `Connect your agent — ${SITE.short}`,
+    description: "MCP install kits, llms.txt, and in-page tools. No API key.",
+    url: absoluteUrl("/agents/"),
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: SITE.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Connect your agent — ${SITE.short}`,
+    description: "MCP install kits, llms.txt, and in-page tools. No API key.",
+    images: ["/og-default.svg"],
+  },
 };
 
 const ENDPOINTS: [string, string][] = [
@@ -29,6 +43,21 @@ const MCP_TOOLS: [string, string][] = [
   ["list_tours / get_tour", "The guided tours as ordered lessons."],
 ];
 
+const MCP_JSON = `{
+  "mcpServers": {
+    "ai-coding-dictionary": {
+      "command": "node",
+      "args": ["/full/path/to/dictionary-mcp.mjs"]
+    }
+  }
+}`;
+
+const VERIFY_PROMPTS = [
+  "List the tools available from the ai-coding-dictionary MCP server.",
+  'Look up "context window" with get_term and summarise it in one sentence.',
+  `Walk me through the “${TOURS.find((t) => t.id === "debugging-a-bad-session")?.name ?? "Debugging a bad session"}” tour using get_tour.`,
+];
+
 export default function AgentsPage() {
   return (
     <main className={d.page} id="main-content">
@@ -47,7 +76,7 @@ export default function AgentsPage() {
         <span className={d.rule} />
         <h1 className={d.title}>Connect your agent</h1>
         <p className={d.def}>
-          Three ways to give an AI agent this dictionary — from a one-line pointer to a full tool server. Nothing needs a
+          Install kits for Cursor, Claude Code, and Windsurf — plus plain text and JSON for any model. Nothing needs a
           key or an account.
         </p>
 
@@ -70,25 +99,46 @@ Fetch one entry as Markdown from {ORIGIN}/api/md/<slug>.md`}
 
         <section className={s.step}>
           <h2 className={s.stepTitle}>
-            <span className={s.num}>02</span>Run the MCP server
+            <span className={s.num}>02</span>Download the MCP server
           </h2>
           <p className={s.text}>
             A single file with the whole dictionary inside — no installs beyond Node. It gives any{" "}
-            <a href="/terms/mcp/">MCP</a>-capable agent proper tools to search and read entries.
+            <a href="/terms/mcp/">MCP</a>-capable agent tools to search and read entries.
           </p>
-          <CodeBlock label="Download" code={`curl -O {ORIGIN}/mcp/dictionary-mcp.mjs`} />
-          <CodeBlock label="Claude Code" code={`claude mcp add ai-coding-dictionary -- node "$PWD/dictionary-mcp.mjs"`} />
+          <CodeBlock label="Download" code={`curl -fsSL {ORIGIN}/mcp/dictionary-mcp.mjs -o dictionary-mcp.mjs`} />
           <CodeBlock
-            label="Cursor, Claude Desktop & other MCP clients"
-            code={`{
-  "mcpServers": {
-    "ai-coding-dictionary": {
-      "command": "node",
-      "args": ["/full/path/to/dictionary-mcp.mjs"]
-    }
-  }
-}`}
+            label="One-liner (download + keep in project)"
+            code={`curl -fsSL {ORIGIN}/mcp/dictionary-mcp.mjs -o ./dictionary-mcp.mjs && chmod +x ./dictionary-mcp.mjs`}
           />
+        </section>
+
+        <section className={s.step}>
+          <h2 className={s.stepTitle}>
+            <span className={s.num}>03</span>Install kits by client
+          </h2>
+          <p className={s.text}>Pick your tool. Use an absolute path to <code>dictionary-mcp.mjs</code> in every config.</p>
+
+          <h3 className={s.kitTitle}>Cursor</h3>
+          <p className={s.text}>
+            Open Cursor Settings → MCP, or edit <code>.cursor/mcp.json</code> in the project (or the global MCP config).
+          </p>
+          <CodeBlock label=".cursor/mcp.json" code={MCP_JSON} />
+
+          <h3 className={s.kitTitle}>Claude Code</h3>
+          <CodeBlock
+            label="CLI"
+            code={`claude mcp add ai-coding-dictionary -- node "$PWD/dictionary-mcp.mjs"`}
+          />
+
+          <h3 className={s.kitTitle}>Windsurf</h3>
+          <p className={s.text}>
+            Add the same MCP server block to Windsurf&apos;s MCP / Cascade tools config (absolute path required).
+          </p>
+          <CodeBlock label="MCP config" code={MCP_JSON} />
+
+          <h3 className={s.kitTitle}>Claude Desktop &amp; other clients</h3>
+          <CodeBlock label="mcpServers JSON" code={MCP_JSON} />
+
           <table className={s.table}>
             <tbody>
               {MCP_TOOLS.map(([n, w]) => (
@@ -103,7 +153,21 @@ Fetch one entry as Markdown from {ORIGIN}/api/md/<slug>.md`}
 
         <section className={s.step}>
           <h2 className={s.stepTitle}>
-            <span className={s.num}>03</span>Let it use the page
+            <span className={s.num}>04</span>Verify it works
+          </h2>
+          <p className={s.text}>After the server is connected, paste one of these into the agent chat:</p>
+          <ul className={s.prompts}>
+            {VERIFY_PROMPTS.map((p) => (
+              <li key={p} className={s.prompt}>
+                {p}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className={s.step}>
+          <h2 className={s.stepTitle}>
+            <span className={s.num}>05</span>Let it use the page
           </h2>
           <p className={s.text}>
             Agents that drive a browser get tools right on the map. Where the browser supports WebMCP, the page offers
@@ -122,7 +186,7 @@ aiCodingDictionary.startTour("${TOURS[0].id}")`}
 
         <section className={s.step}>
           <h2 className={s.stepTitle}>
-            <span className={s.num}>04</span>Or just read the files
+            <span className={s.num}>06</span>Or just read the files
           </h2>
           <table className={s.table}>
             <tbody>
@@ -140,7 +204,7 @@ aiCodingDictionary.startTour("${TOURS[0].id}")`}
 
         <section className={s.step}>
           <h2 className={s.stepTitle}>
-            <span className={s.num}>05</span>Things to ask it
+            <span className={s.num}>07</span>Things to ask it
           </h2>
           <ul className={s.prompts}>
             <li className={s.prompt}>Explain the difference between compaction and clearing, using the dictionary.</li>

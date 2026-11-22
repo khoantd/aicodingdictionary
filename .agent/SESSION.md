@@ -6,14 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| **Updated** | 2026-11-21 |
+| **Updated** | 2026-11-22 |
 | **Phase** | build |
 | **Tool** | cursor |
 | **Persona** | _(general)_ |
 
 ## Goal
 
-Fix Royal Platform `404 NOT_FOUND` on `aicodingdictionary-alpha.vercel.app`.
+Ship Tier 1 growth features: SEO/share cards, agent install kits, discovery hygiene (static-export safe).
 
 ## Done
 
@@ -21,6 +21,15 @@ Fix Royal Platform `404 NOT_FOUND` on `aicodingdictionary-alpha.vercel.app`.
 - Production redeployed to `khoantds-projects/aicodingdictionary` (works)
 - Fixed Royal Platform `aicodingdictionary`: Framework was **Other** → set to **Next.js**, Root Directory `app`
 - Git production redeploy `dpl_EB6WEsRtNj8A31fekE1NXmGZiBjB` → https://aicodingdictionary-alpha.vercel.app/ returns **200**
+- **Growth Tier 1 (2026-11-22):**
+  - `sitemap.xml` + `robots.txt` + `metadataBase` / Open Graph / Twitter + `/og-default.svg`
+  - Share cards: `/share/term/[slug]/`, `/share/tour/[id]/` (map share copies term card URL)
+  - `/agents` install kits for Cursor, Claude Code, Windsurf + verify prompts
+  - What’s new strip on `/intro` and `/terms`
+  - Client search on `/terms`
+  - Two new tours: `debugging-a-bad-session`, `tools-skills-and-mcp`
+  - OpenAPI includes `/api/tours.json` + MCP download path
+  - `npm run build` succeeds (309 static pages)
 
 ## In progress
 
@@ -29,9 +38,10 @@ Fix Royal Platform `404 NOT_FOUND` on `aicodingdictionary-alpha.vercel.app`.
 
 ## Next
 
-1. Optional: commit uncommitted intro/MCP + ignore fixes
-2. Royal Platform: deploy from **repo root** (or Git API), not from `app/` while Root Directory is `app` (avoids `app/app`)
-3. Personal scope: `cd app && vercel --prod --yes --scope khoantds-projects`
+1. Optional: commit growth feature changes
+2. Optional: set `NEXT_PUBLIC_SITE_URL` on Vercel to the preferred canonical host
+3. Deferred: npm-packaged MCP, localStorage study kit, quizzes, accounts
+4. Royal Platform: deploy from **repo root** (or Git API), not from `app/` while Root Directory is `app`
 
 ## Decisions
 
@@ -39,6 +49,8 @@ Fix Royal Platform `404 NOT_FOUND` on `aicodingdictionary-alpha.vercel.app`.
 - Static export only — no server runtime / DB
 - Intro is a dedicated `/intro` route; home stays the 3D map
 - Intro reuses existing paper/ink + docs shell (not a new color system)
+- Canonical site URL defaults to `https://aicodingdictionary-alpha.vercel.app` via `app/src/lib/site.ts` (override with `NEXT_PUBLIC_SITE_URL`)
+- Share from the map uses `/share/term/...` for richer link previews
 
 ## Gotchas
 
@@ -47,6 +59,7 @@ Fix Royal Platform `404 NOT_FOUND` on `aicodingdictionary-alpha.vercel.app`.
 - Royal Platform 404 was Framework Preset = Other (empty output), not a missing route
 - CodeGraph indexes agent skill trees; prefer `app/src` path/task filters for product structure
 - Visual checks compare the **no-WebGL fallback**; 3D map needs a real browser with WebGL
+- Share page CSS imports must use `@/app/...` aliases (relative paths break under `[slug]` / `[id]` folders)
 
 ## Pointers
 
@@ -55,5 +68,5 @@ Fix Royal Platform `404 NOT_FOUND` on `aicodingdictionary-alpha.vercel.app`.
 | Spec | `craft.json` (status/notes); study notes in `capture/` |
 | Tasks | `tasks/todo.md` |
 | Branch | _(local workspace)_ |
-| Key files | `app/src/app/intro/page.tsx`, `app/src/app/intro/intro.module.css`, `app/src/data/terms.ts`, `app/src/components/Atlas.tsx` |
+| Key files | `app/src/lib/site.ts`, `app/src/app/sitemap.ts`, `app/src/app/share/**`, `app/src/app/agents/page.tsx`, `app/src/data/tours.ts`, `app/src/data/whatsNew.ts` |
 | Royal prod | https://aicodingdictionary-alpha.vercel.app/ |

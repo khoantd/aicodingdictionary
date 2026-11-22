@@ -70,7 +70,10 @@ export function llmsTxt(): string {
     "",
     "## Guided tours",
     "",
-    ...TOURS.map((t) => `- [${t.name}](/?tour=${t.id}&term=${t.steps[0].slug}): ${t.blurb} Stops: ${t.steps.map((s) => s.slug).join(" → ")}`),
+    ...TOURS.map(
+      (t) =>
+        `- [${t.name}](/share/tour/${t.id}/) (map: /?tour=${t.id}&term=${t.steps[0].slug}): ${t.blurb} Stops: ${t.steps.map((s) => s.slug).join(" → ")}`,
+    ),
     "",
   );
   for (const s of SECTIONS) {

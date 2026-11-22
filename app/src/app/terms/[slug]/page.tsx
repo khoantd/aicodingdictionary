@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { neighbours, parseLinks, sectionOf, SITE, TERM_BY_SLUG, TERMS } from "@/data/terms";
+import { absoluteUrl } from "@/lib/site";
 import s from "../docs.module.css";
 
 export const dynamicParams = false;
@@ -13,14 +14,29 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const t = TERM_BY_SLUG.get(slug);
   if (!t) return {};
+  const title = `${t.name} — ${SITE.name}`;
   return {
-    title: `${t.name} — ${SITE.name}`,
+    title,
     description: t.def,
     alternates: {
+      canonical: `/terms/${t.slug}/`,
       types: {
         "text/markdown": `/api/md/${t.slug}.md`,
         "application/json": `/api/terms/${t.slug}.json`,
       },
+    },
+    openGraph: {
+      title,
+      description: t.def,
+      type: "article",
+      url: absoluteUrl(`/terms/${t.slug}/`),
+      images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: t.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: t.def,
+      images: ["/og-default.svg"],
     },
   };
 }
@@ -99,6 +115,9 @@ export default async function TermPage({ params }: { params: Promise<{ slug: str
           </a>
           <a className={s.back} href={`/api/terms/${t.slug}.json`}>
             JSON
+          </a>
+          <a className={s.back} href={`/share/term/${t.slug}/`}>
+            Share card
           </a>
           <a className={s.back} href="/terms/">
             All terms

@@ -73,6 +73,36 @@ export const TOURS: Tour[] = [
       { slug: "dark-factory", note: "The far end: code nobody reads. Decide deliberately if you want it." },
     ],
   },
+  {
+    id: "debugging-a-bad-session",
+    name: "Debugging a bad session",
+    blurb: "When the agent starts sounding confident and wrong — name the failure, then reset cleanly.",
+    steps: [
+      { slug: "smart-zone", note: "Early turns are sharp. If quality dropped, you may already be past this zone." },
+      { slug: "attention-degradation", note: "A long context spreads attention thin — instructions slip." },
+      { slug: "hallucination", note: "Drift often looks like fluent invention, not an error message." },
+      { slug: "sycophancy", note: "Or the agent agrees with a bad premise instead of pushing back." },
+      { slug: "handoff-artifact", note: "Before you reset, write down what still matters." },
+      { slug: "clearing", note: "Start a fresh session so attention can focus again." },
+      { slug: "compaction", note: "If you must keep going, summarise instead of carrying every turn." },
+      { slug: "human-in-the-loop", note: "Decide deliberately what still needs your eyes." },
+    ],
+  },
+  {
+    id: "tools-skills-and-mcp",
+    name: "Tools, skills, and MCP",
+    blurb: "How an agent reaches outside the model — tools, skills, and shared servers.",
+    steps: [
+      { slug: "tool", note: "A tool is a capability the harness can run on the model's behalf." },
+      { slug: "tool-call", note: "The model asks for a tool; it does not run the tool itself." },
+      { slug: "tool-result", note: "The harness returns what happened so the next turn can use it." },
+      { slug: "mcp", note: "MCP is a shared way to expose tools to many clients." },
+      { slug: "skill", note: "A skill packages instructions (and sometimes tools) the agent can load on demand." },
+      { slug: "progressive-disclosure", note: "Show only what the agent needs now — keep the rest out of context." },
+      { slug: "agents-md", note: "Project instructions steer which tools and skills matter here." },
+      { slug: "permission-mode", note: "How freely tools may run without asking you first." },
+    ],
+  },
 ];
 
 export const TOUR_BY_ID = new Map(TOURS.map((t) => [t.id, t]));

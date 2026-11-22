@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { SECTIONS, SITE, TERMS } from "@/data/terms";
 import { TOURS } from "@/data/tours";
 import { ExtIcon } from "@/components/Fallback";
+import WhatsNew from "@/components/WhatsNew";
+import { absoluteUrl } from "@/lib/site";
 import CodeBlock from "../agents/CodeBlock";
 import d from "../terms/docs.module.css";
 import s from "./intro.module.css";
@@ -9,6 +11,19 @@ import s from "./intro.module.css";
 export const metadata: Metadata = {
   title: `Introduction — ${SITE.name}`,
   description: SITE.tagline,
+  alternates: { canonical: "/intro/" },
+  openGraph: {
+    title: `Introduction — ${SITE.short}`,
+    description: SITE.tagline,
+    url: absoluteUrl("/intro/"),
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: SITE.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Introduction — ${SITE.short}`,
+    description: SITE.tagline,
+    images: ["/og-default.svg"],
+  },
 };
 
 const HOW_TO: [string, string, string][] = [
@@ -104,6 +119,8 @@ export default function IntroPage() {
           </div>
         </header>
 
+        <WhatsNew />
+
         <section className={s.section} aria-labelledby="how-heading">
           <h2 className={s.sectionTitle} id="how-heading">
             How to explore
@@ -157,9 +174,12 @@ export default function IntroPage() {
           <ul className={s.tours}>
             {TOURS.map((tour) => (
               <li key={tour.id} className={s.tour}>
-                <div className={s.tourName}>{tour.name}</div>
+                <div className={s.tourName}>
+                  <a href={`/share/tour/${tour.id}/`}>{tour.name}</a>
+                </div>
                 <p className={s.tourMeta}>
-                  {tour.steps.length} stops
+                  {tour.steps.length} stops ·{" "}
+                  <a href={`/?tour=${tour.id}`}>Start on the map</a>
                 </p>
                 <p className={s.tourBlurb}>{tour.blurb}</p>
               </li>

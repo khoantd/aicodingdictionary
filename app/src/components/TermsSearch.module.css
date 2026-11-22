@@ -1,0 +1,38 @@
+.searchLabel {
+  display: block;
+  margin-top: 1.6rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: color-mix(in oklch, var(--ink) 46%, transparent);
+}
+
+.search {
+  display: block;
+  width: 100%;
+  margin-top: 0.55rem;
+  padding: 0.7rem 0.9rem;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: color-mix(in oklch, var(--paper) 80%, white);
+  border: 1px solid color-mix(in oklch, var(--ink) 22%, transparent);
+  border-radius: 0.7rem;
+  outline: none;
+}
+
+.search:focus {
+  border-color: color-mix(in oklch, var(--ink) 55%, transparent);
+}
+
+.empty {
+  margin: 0.85rem 0 0;
+  font-size: 0.92rem;
+  color: color-mix(in oklch, var(--ink) 70%, transparent);
+}
+
+.empty a {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}

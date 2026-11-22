@@ -19,6 +19,8 @@ export function GET() {
       "/api/sections.json": { get: { operationId: "listSections", summary: "Sections and the terms in each", responses: { "200": { description: "Sections" } } } },
       "/api/terms/{slug}.json": { get: { operationId: "getTerm", summary: "One term as JSON", parameters: slug, responses: { "200": { description: "A term" } } } },
       "/api/md/{slug}.md": { get: { operationId: "getTermMarkdown", summary: "One term as Markdown", parameters: slug, responses: { "200": { description: "Markdown", content: text } } } },
+      "/api/tours.json": { get: { operationId: "listTours", summary: "Guided tours, stop by stop", responses: { "200": { description: "Tours" } } } },
+      "/mcp/dictionary-mcp.mjs": { get: { operationId: "downloadMcp", summary: "Download the stdio MCP server (Node, no deps)", responses: { "200": { description: "JavaScript module", content: { "text/javascript": { schema: { type: "string" } } } } } } },
     },
   });
 }

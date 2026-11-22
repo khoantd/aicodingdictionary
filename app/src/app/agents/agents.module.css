@@ -8,6 +8,13 @@
   margin-top: 2.4rem;
 }
 
+.kitTitle {
+  margin: 1.4rem 0 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
 .stepTitle {
   display: flex;
   align-items: baseline;

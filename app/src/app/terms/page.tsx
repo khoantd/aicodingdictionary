@@ -1,10 +1,26 @@
 import type { Metadata } from "next";
+import WhatsNew from "@/components/WhatsNew";
+import TermsSearch from "@/components/TermsSearch";
 import { SECTIONS, SITE, TERMS } from "@/data/terms";
+import { absoluteUrl } from "@/lib/site";
 import s from "./docs.module.css";
 
 export const metadata: Metadata = {
   title: `All terms — ${SITE.name}`,
-  description: SITE.tagline,
+  description: `Browse all ${TERMS.length} terms across ${SECTIONS.length} sections. Search by name or definition.`,
+  alternates: { canonical: "/terms/" },
+  openGraph: {
+    title: `All terms — ${SITE.short}`,
+    description: SITE.tagline,
+    url: absoluteUrl("/terms/"),
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: SITE.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `All terms — ${SITE.short}`,
+    description: SITE.tagline,
+    images: ["/og-default.svg"],
+  },
 };
 
 export default function TermsIndex() {
@@ -12,7 +28,9 @@ export default function TermsIndex() {
     <main className={s.page} id="main-content">
       <div className={s.inner}>
         <div className={s.top}>
-          <span className={s.kicker}>{TERMS.length} terms · {SECTIONS.length} sections</span>
+          <span className={s.kicker}>
+            {TERMS.length} terms · {SECTIONS.length} sections
+          </span>
           <a className={s.back} href="/">
             Open the 3D map
           </a>
@@ -40,19 +58,8 @@ export default function TermsIndex() {
             MCP server
           </a>
         </div>
-        {SECTIONS.map((sec) => (
-          <section key={sec.id}>
-            <h2 className={s.label}>{sec.name}</h2>
-            <ul className={s.list}>
-              {TERMS.filter((t) => t.section === sec.id).map((t) => (
-                <li key={t.slug}>
-                  <a href={`/terms/${t.slug}/`}>{t.name}</a>
-                  <span>{t.def}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+        <WhatsNew />
+        <TermsSearch />
       </div>
     </main>
   );

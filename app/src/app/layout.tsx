@@ -1,17 +1,35 @@
 import type { Metadata, Viewport } from "next";
 import { SITE } from "@/data/terms";
+import { absoluteUrl, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: SITE.name,
   description: SITE.tagline,
+  applicationName: SITE.short,
   alternates: {
+    canonical: "/",
     types: {
       "text/plain": "/llms.txt",
       "application/json": "/api/terms.json",
     },
   },
-  openGraph: { title: SITE.name, description: SITE.tagline, type: "website" },
+  openGraph: {
+    title: SITE.name,
+    description: SITE.tagline,
+    type: "website",
+    url: absoluteUrl("/"),
+    siteName: SITE.name,
+    locale: "en_US",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: SITE.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE.name,
+    description: SITE.tagline,
+    images: ["/og-default.svg"],
+  },
 };
 
 export const viewport: Viewport = {

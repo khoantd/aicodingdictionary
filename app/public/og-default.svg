@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The AI Coding Dictionary">
+  <rect width="1200" height="630" fill="#eaeae8"/>
+  <circle cx="180" cy="200" r="6" fill="#1a1a19" opacity="0.55"/>
+  <circle cx="320" cy="140" r="5" fill="#1a1a19" opacity="0.4"/>
+  <circle cx="260" cy="320" r="7" fill="#1a1a19" opacity="0.5"/>
+  <circle cx="420" cy="260" r="5" fill="#1a1a19" opacity="0.35"/>
+  <circle cx="150" cy="400" r="4" fill="#1a1a19" opacity="0.3"/>
+  <line x1="180" y1="200" x2="320" y2="140" stroke="#1a1a19" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="180" y1="200" x2="260" y2="320" stroke="#1a1a19" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="260" y1="320" x2="420" y2="260" stroke="#1a1a19" stroke-opacity="0.18" stroke-width="2"/>
+  <line x1="320" y1="140" x2="420" y2="260" stroke="#1a1a19" stroke-opacity="0.15" stroke-width="2"/>
+  <line x1="260" y1="320" x2="150" y2="400" stroke="#1a1a19" stroke-opacity="0.15" stroke-width="2"/>
+  <text x="520" y="280" fill="#1a1a19" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700">AI Coding Dictionary</text>
+  <text x="520" y="340" fill="#1a1a19" fill-opacity="0.65" font-family="system-ui, sans-serif" font-size="26">Plain-English terms on an explorable 3D map</text>
+</svg>
