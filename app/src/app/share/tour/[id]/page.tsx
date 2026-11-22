@@ -63,8 +63,11 @@ export default async function TourShareCard({ params }: { params: Promise<{ id: 
             <a className={d.primary} href={`/?tour=${tour.id}`}>
               Start on the map
             </a>
-            <a className={d.back} href="/agents/">
-              Connect your agent
+            <a className={d.back} href="/intro/">
+              All tours
+            </a>
+            <a className={d.back} href="/terms/">
+              All terms
             </a>
           </div>
         </article>
@@ -78,7 +81,7 @@ export default async function TourShareCard({ params }: { params: Promise<{ id: 
                 <span className={s.stopNum}>{String(i + 1).padStart(2, "0")}</span>
                 <div>
                   <div className={s.stopName}>
-                    {term ? <a href={`/share/term/${term.slug}/`}>{term.name}</a> : step.slug}
+                    {term ? <a href={`/terms/${term.slug}/`}>{term.name}</a> : step.slug}
                   </div>
                   <p className={s.stopNote}>{step.note}</p>
                 </div>

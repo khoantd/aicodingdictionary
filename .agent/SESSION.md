@@ -30,6 +30,12 @@ Ship Tier 1 growth features: SEO/share cards, agent install kits, discovery hygi
   - Two new tours: `debugging-a-bad-session`, `tools-skills-and-mcp`
   - OpenAPI includes `/api/tours.json` + MCP download path
   - `npm run build` succeeds (309 static pages)
+- **Dedup / linkage cleanup (2026-11-22):**
+  - Shared `app/src/data/agentSetup.ts` (`MCP_TOOLS`, export links, keyboard hints)
+  - `/intro` MCP section → short teaser + CTA to `/agents`
+  - `TermDocBody` + `TermProse`; tour stops → `/terms/{slug}/`
+  - Agents top nav includes `/terms/`; Tours dialog has share-card links
+  - Build still green (309 pages)
 
 ## In progress
 
@@ -38,7 +44,7 @@ Ship Tier 1 growth features: SEO/share cards, agent install kits, discovery hygi
 
 ## Next
 
-1. Optional: commit growth feature changes
+1. Optional: commit growth + dedupe changes
 2. Optional: set `NEXT_PUBLIC_SITE_URL` on Vercel to the preferred canonical host
 3. Deferred: npm-packaged MCP, localStorage study kit, quizzes, accounts
 4. Royal Platform: deploy from **repo root** (or Git API), not from `app/` while Root Directory is `app`
@@ -68,5 +74,5 @@ Ship Tier 1 growth features: SEO/share cards, agent install kits, discovery hygi
 | Spec | `craft.json` (status/notes); study notes in `capture/` |
 | Tasks | `tasks/todo.md` |
 | Branch | _(local workspace)_ |
-| Key files | `app/src/lib/site.ts`, `app/src/app/sitemap.ts`, `app/src/app/share/**`, `app/src/app/agents/page.tsx`, `app/src/data/tours.ts`, `app/src/data/whatsNew.ts` |
+| Key files | `app/src/data/agentSetup.ts`, `app/src/components/TermDocBody.tsx`, `app/src/lib/site.ts`, `app/src/app/share/**`, `app/src/app/agents/page.tsx`, `app/src/data/tours.ts` |
 | Royal prod | https://aicodingdictionary-alpha.vercel.app/ |

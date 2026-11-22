@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { neighbours, parseLinks, sectionOf, SITE, TERM_BY_SLUG, TERMS } from "@/data/terms";
+import TermDocBody from "@/components/TermDocBody";
+import { sectionOf, SITE, TERM_BY_SLUG, TERMS } from "@/data/terms";
 import { absoluteUrl } from "@/lib/site";
 import s from "../docs.module.css";
 
@@ -46,7 +47,6 @@ export default async function TermPage({ params }: { params: Promise<{ slug: str
   const t = TERM_BY_SLUG.get(slug);
   if (!t) notFound();
   const sec = sectionOf(t.section);
-  const links = neighbours(t);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
@@ -68,46 +68,26 @@ export default async function TermPage({ params }: { params: Promise<{ slug: str
         </div>
         <span className={s.rule} />
         <h1 className={s.title}>{t.name}</h1>
-        {t.aliases?.length ? <p className={s.kicker} style={{ marginTop: "0.9rem" }}>Also: {t.aliases.join(", ")}</p> : null}
-        <p className={s.def}>{t.def}</p>
-
-        <h2 className={s.label}>Full definition</h2>
-        <div className={s.prose}>
-          {t.full.map((p, i) => (
-            <p key={i}>
-              {parseLinks(p).map((seg, j) =>
-                seg.term ? (
-                  <a key={j} href={`/terms/${seg.term.slug}/`}>
-                    {seg.text}
-                  </a>
-                ) : (
-                  <span key={j}>{seg.text}</span>
-                ),
-              )}
-            </p>
-          ))}
-        </div>
-
-        {t.usage ? (
-          <>
-            <h2 className={s.label}>Heard in the wild</h2>
-            <ul className={s.bubbles}>
-              <li className={s.q}>{t.usage[0]}</li>
-              <li className={s.a}>{t.usage[1]}</li>
-            </ul>
-          </>
-        ) : null}
-
-        <h2 className={s.label}>Connects to</h2>
-        <ul className={s.tags}>
-          {links.map((o) => (
-            <li key={o.slug}>
-              <a className={s.tag} href={`/terms/${o.slug}/`}>
-                {o.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <TermDocBody
+          term={t}
+          classes={{
+            aliases: s.aliases,
+            def: s.def,
+            label: s.label,
+            prose: s.prose,
+            bubbles: s.bubbles,
+            bubbleQ: s.q,
+            bubbleA: s.a,
+            tags: s.tags,
+            tag: s.tag,
+          }}
+          renderTermLink={(term, text) => <a href={`/terms/${term.slug}/`}>{text}</a>}
+          renderRelated={(o) => (
+            <a className={s.tag} href={`/terms/${o.slug}/`}>
+              {o.name}
+            </a>
+          )}
+        />
 
         <div className={s.formats}>
           <a className={s.primary} href={`/api/md/${t.slug}.md`}>

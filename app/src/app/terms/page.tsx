@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import WhatsNew from "@/components/WhatsNew";
 import TermsSearch from "@/components/TermsSearch";
+import { AGENT_EXPORT_LINKS } from "@/data/agentSetup";
 import { SECTIONS, SITE, TERMS } from "@/data/terms";
 import { absoluteUrl } from "@/lib/site";
 import s from "./docs.module.css";
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
   },
 };
 
+/** Export / nav links for the index — skip “All terms” (this page). */
+const INDEX_LINKS = AGENT_EXPORT_LINKS.filter((l) => l.href !== "/terms/");
+
 export default function TermsIndex() {
   return (
     <main className={s.page} id="main-content">
@@ -39,24 +43,11 @@ export default function TermsIndex() {
         <h1 className={s.title}>{SITE.name}</h1>
         <p className={s.def}>{SITE.tagline}</p>
         <div className={s.formats}>
-          <a className={s.primary} href="/intro/">
-            Introduction
-          </a>
-          <a className={s.back} href="/agents/">
-            Connect your agent
-          </a>
-          <a className={s.back} href="/llms.txt">
-            llms.txt
-          </a>
-          <a className={s.back} href="/llms-full.txt">
-            Full Markdown
-          </a>
-          <a className={s.back} href="/api/terms.json">
-            JSON
-          </a>
-          <a className={s.back} href="/mcp/dictionary-mcp.mjs">
-            MCP server
-          </a>
+          {INDEX_LINKS.map((link, i) => (
+            <a key={link.href} className={i === 0 ? s.primary : s.back} href={link.href}>
+              {link.label}
+            </a>
+          ))}
         </div>
         <WhatsNew />
         <TermsSearch />

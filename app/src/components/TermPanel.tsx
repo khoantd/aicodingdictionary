@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { neighbours, parseLinks, sectionOf, TERM_BY_SLUG, TERMS, type Term } from "@/data/terms";
+import TermProse from "@/components/TermProse";
+import { neighbours, sectionOf, TERM_BY_SLUG, TERMS, type Term } from "@/data/terms";
 import { termToMarkdown } from "@/lib/markdown";
 import s from "./TermPanel.module.css";
 
@@ -12,22 +13,6 @@ function Roll({ children }: { children: string }) {
         <span>{children}</span>
         <span>{children}</span>
       </span>
-    </>
-  );
-}
-
-function Prose({ text, onOpen }: { text: string; onOpen: (slug: string) => void }) {
-  return (
-    <>
-      {parseLinks(text).map((seg, i) =>
-        seg.term ? (
-          <button key={i} type="button" className={s.inlineLink} onClick={() => onOpen(seg.term!.slug)}>
-            {seg.text}
-          </button>
-        ) : (
-          <span key={i}>{seg.text}</span>
-        ),
-      )}
     </>
   );
 }
@@ -161,7 +146,14 @@ export default function TermPanel({ term, open, expanded, onExpand, onOpen, onCl
           <div className={s.prose}>
             {paras.map((p, i) => (
               <p className={s.proseP} key={i}>
-                <Prose text={p} onOpen={onOpen} />
+                <TermProse
+                  text={p}
+                  renderTerm={(linked, text) => (
+                    <button type="button" className={s.inlineLink} onClick={() => onOpen(linked.slug)}>
+                      {text}
+                    </button>
+                  )}
+                />
               </p>
             ))}
             {term.full.length > 1 ? (

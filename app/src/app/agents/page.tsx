@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { SITE, TERMS } from "@/data/terms";
+import { SITE } from "@/data/terms";
 import { TOURS } from "@/data/tours";
+import {
+  agentEndpointRows,
+  MCP_CLAUDE_CODE,
+  MCP_DOWNLOAD,
+  MCP_JSON,
+  MCP_TOOLS,
+} from "@/data/agentSetup";
 import { absoluteUrl } from "@/lib/site";
 import d from "../terms/docs.module.css";
 import CodeBlock from "./CodeBlock";
@@ -8,7 +15,8 @@ import s from "./agents.module.css";
 
 export const metadata: Metadata = {
   title: `Connect your agent — ${SITE.name}`,
-  description: "Give any AI agent the AI Coding Dictionary: MCP install kits for Cursor, Claude Code, and Windsurf — plus Markdown and JSON files.",
+  description:
+    "Give any AI agent the AI Coding Dictionary: MCP install kits for Cursor, Claude Code, and Windsurf — plus Markdown and JSON files.",
   alternates: { canonical: "/agents/" },
   openGraph: {
     title: `Connect your agent — ${SITE.short}`,
@@ -24,39 +32,13 @@ export const metadata: Metadata = {
   },
 };
 
-const ENDPOINTS: [string, string][] = [
-  ["/llms.txt", "Short index of every term and tour, written for language models."],
-  ["/llms-full.txt", "Every entry in one Markdown document — paste it into any chat."],
-  ["/api/terms.json", `All ${TERMS.length} terms as JSON, with connections.`],
-  ["/api/terms/context-window.json", "One term as JSON (swap in any slug)."],
-  ["/api/md/context-window.md", "One term as Markdown."],
-  ["/api/sections.json", "The seven sections and what's in them."],
-  ["/api/tours.json", `The ${TOURS.length} guided tours, stop by stop.`],
-  ["/openapi.json", "OpenAPI description of all of the above."],
-];
-
-const MCP_TOOLS: [string, string][] = [
-  ["search_terms", "Find terms by name or by words in the definition."],
-  ["get_term", "One full entry as Markdown."],
-  ["related_terms", "The terms connected to a term."],
-  ["list_sections", "Sections and their terms."],
-  ["list_tours / get_tour", "The guided tours as ordered lessons."],
-];
-
-const MCP_JSON = `{
-  "mcpServers": {
-    "ai-coding-dictionary": {
-      "command": "node",
-      "args": ["/full/path/to/dictionary-mcp.mjs"]
-    }
-  }
-}`;
-
 const VERIFY_PROMPTS = [
   "List the tools available from the ai-coding-dictionary MCP server.",
   'Look up "context window" with get_term and summarise it in one sentence.',
   `Walk me through the “${TOURS.find((t) => t.id === "debugging-a-bad-session")?.name ?? "Debugging a bad session"}” tour using get_tour.`,
 ];
+
+const ENDPOINTS = agentEndpointRows();
 
 export default function AgentsPage() {
   return (
@@ -67,6 +49,9 @@ export default function AgentsPage() {
           <div className={s.topLinks}>
             <a className={d.back} href="/intro/">
               Introduction
+            </a>
+            <a className={d.back} href="/terms/">
+              All terms
             </a>
             <a className={d.back} href="/">
               Open the 3D map
@@ -105,7 +90,7 @@ Fetch one entry as Markdown from {ORIGIN}/api/md/<slug>.md`}
             A single file with the whole dictionary inside — no installs beyond Node. It gives any{" "}
             <a href="/terms/mcp/">MCP</a>-capable agent tools to search and read entries.
           </p>
-          <CodeBlock label="Download" code={`curl -fsSL {ORIGIN}/mcp/dictionary-mcp.mjs -o dictionary-mcp.mjs`} />
+          <CodeBlock label="Download" code={MCP_DOWNLOAD} />
           <CodeBlock
             label="One-liner (download + keep in project)"
             code={`curl -fsSL {ORIGIN}/mcp/dictionary-mcp.mjs -o ./dictionary-mcp.mjs && chmod +x ./dictionary-mcp.mjs`}
@@ -116,7 +101,9 @@ Fetch one entry as Markdown from {ORIGIN}/api/md/<slug>.md`}
           <h2 className={s.stepTitle}>
             <span className={s.num}>03</span>Install kits by client
           </h2>
-          <p className={s.text}>Pick your tool. Use an absolute path to <code>dictionary-mcp.mjs</code> in every config.</p>
+          <p className={s.text}>
+            Pick your tool. Use an absolute path to <code>dictionary-mcp.mjs</code> in every config.
+          </p>
 
           <h3 className={s.kitTitle}>Cursor</h3>
           <p className={s.text}>
@@ -125,10 +112,7 @@ Fetch one entry as Markdown from {ORIGIN}/api/md/<slug>.md`}
           <CodeBlock label=".cursor/mcp.json" code={MCP_JSON} />
 
           <h3 className={s.kitTitle}>Claude Code</h3>
-          <CodeBlock
-            label="CLI"
-            code={`claude mcp add ai-coding-dictionary -- node "$PWD/dictionary-mcp.mjs"`}
-          />
+          <CodeBlock label="CLI" code={MCP_CLAUDE_CODE} />
 
           <h3 className={s.kitTitle}>Windsurf</h3>
           <p className={s.text}>

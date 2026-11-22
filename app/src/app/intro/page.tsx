@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { SECTIONS, SITE, TERMS } from "@/data/terms";
 import { TOURS } from "@/data/tours";
+import { KEYBOARD_HINTS } from "@/data/agentSetup";
 import { ExtIcon } from "@/components/Fallback";
 import WhatsNew from "@/components/WhatsNew";
 import { absoluteUrl } from "@/lib/site";
-import CodeBlock from "../agents/CodeBlock";
 import d from "../terms/docs.module.css";
 import s from "./intro.module.css";
 
@@ -43,54 +43,6 @@ const HOW_TO: [string, string, string][] = [
     "Press ⌘K to search, or open Guided tours for short paths through the map.",
   ],
 ];
-
-const MCP_TOOLS: [string, string][] = [
-  ["search_terms", "Find terms by name or by words in the definition."],
-  ["get_term", "One full entry as Markdown."],
-  ["related_terms", "The terms connected to a term."],
-  ["list_sections", "Sections and their terms."],
-  ["list_tours / get_tour", "The guided tours as ordered lessons."],
-];
-
-/** Prompt users paste into their agent so it learns and configures the MCP server. */
-const AGENT_MCP_PROMPT = `Please set up the AI Coding Dictionary MCP so you can look up AI coding terms (tokens, context windows, agents, handoffs, etc.) with shared definitions.
-
-## What to do
-
-1. Download the single-file MCP server (Node only, no npm install):
-   curl -O {ORIGIN}/mcp/dictionary-mcp.mjs
-
-2. Register it with my MCP client.
-
-   Claude Code:
-   claude mcp add ai-coding-dictionary -- node "$PWD/dictionary-mcp.mjs"
-
-   Cursor, Claude Desktop, or other MCP clients — add to MCP config (use the absolute path to the file):
-   {
-     "mcpServers": {
-       "ai-coding-dictionary": {
-         "command": "node",
-         "args": ["/absolute/path/to/dictionary-mcp.mjs"]
-       }
-     }
-   }
-
-3. After it is connected, use these tools whenever we talk about AI coding vocabulary:
-   - search_terms — find terms by name or definition text
-   - get_term — one full entry as Markdown
-   - related_terms — terms connected to a given term
-   - list_sections — the seven sections and their terms
-   - list_tours / get_tour — guided tours, stop by stop
-
-4. Optional fallbacks (no MCP required):
-   - Short index: {ORIGIN}/llms.txt
-   - Full Markdown: {ORIGIN}/llms-full.txt
-   - One term: {ORIGIN}/api/md/<slug>.md
-   - Setup docs: {ORIGIN}/agents/
-
-## Done when
-
-Confirm the MCP server is configured, list the tools you can see from ai-coding-dictionary, then look up "context window" with get_term to prove it works.`;
 
 export default function IntroPage() {
   return (
@@ -192,95 +144,29 @@ export default function IntroPage() {
             Keyboard
           </h2>
           <dl className={s.keys}>
-            <div>
-              <dt>
-                <span className={s.kbd}>⌘</span>
-                <span className={s.kbd}>K</span>
-              </dt>
-              <dd>Search the dictionary</dd>
-            </div>
-            <div>
-              <dt>
-                <span className={s.kbd}>←</span>
-                <span className={s.kbd}>→</span>
-              </dt>
-              <dd>Previous / next term</dd>
-            </div>
-            <div>
-              <dt>
-                <span className={s.kbd}>Esc</span>
-              </dt>
-              <dd>Close the panel or dialog</dd>
-            </div>
+            {KEYBOARD_HINTS.map((hint) => (
+              <div key={hint.action}>
+                <dt>
+                  {hint.keys.map((k) => (
+                    <span key={k} className={s.kbd}>
+                      {k}
+                    </span>
+                  ))}
+                </dt>
+                <dd>{hint.action}</dd>
+              </div>
+            ))}
           </dl>
         </section>
 
         <section className={s.section} aria-labelledby="mcp-heading">
           <h2 className={s.sectionTitle} id="mcp-heading">
-            MCP setup for your agent
+            For your AI agent
           </h2>
           <p className={s.sectionText}>
-            Give any MCP-capable agent this dictionary as tools — one Node file, no API key. Copy the prompt below into
-            your agent chat and ask it to integrate; or follow the short steps yourself.
+            Give any MCP-capable agent this dictionary as tools — one Node file, no API key. Install kits for Cursor,
+            Claude Code, and Windsurf live on the agents page.
           </p>
-
-          <div className={s.askBox}>
-            <p className={s.askLabel}>Paste this to your agent</p>
-            <p className={s.askHint}>
-              It tells the agent what to download, how to register the MCP server, which tools to use, and how to verify
-              the setup.
-            </p>
-            <CodeBlock label="Agent prompt" code={AGENT_MCP_PROMPT} />
-          </div>
-
-          <p className={s.subLabel}>Or set it up yourself</p>
-          <ol className={s.steps}>
-            <li className={s.step}>
-              <span className={s.stepNum}>01</span>
-              <div className={s.stepBody}>
-                <strong>Download the MCP server</strong>
-                <p>A single file with the whole dictionary inside — no installs beyond Node.</p>
-              </div>
-            </li>
-            <li className={s.step}>
-              <span className={s.stepNum}>02</span>
-              <div className={s.stepBody}>
-                <strong>Register it with your client</strong>
-                <p>Claude Code, Cursor, Claude Desktop, or any MCP client that runs a local command.</p>
-              </div>
-            </li>
-            <li className={s.step}>
-              <span className={s.stepNum}>03</span>
-              <div className={s.stepBody}>
-                <strong>Use the tools</strong>
-                <p>Once connected, your agent can search and read entries without leaving the chat.</p>
-              </div>
-            </li>
-          </ol>
-
-          <CodeBlock label="Download" code={`curl -O {ORIGIN}/mcp/dictionary-mcp.mjs`} />
-          <CodeBlock label="Claude Code" code={`claude mcp add ai-coding-dictionary -- node "$PWD/dictionary-mcp.mjs"`} />
-          <CodeBlock
-            label="Cursor, Claude Desktop & other MCP clients"
-            code={`{
-  "mcpServers": {
-    "ai-coding-dictionary": {
-      "command": "node",
-      "args": ["/full/path/to/dictionary-mcp.mjs"]
-    }
-  }
-}`}
-          />
-
-          <ul className={s.toolList}>
-            {MCP_TOOLS.map(([name, desc]) => (
-              <li key={name} className={s.toolRow}>
-                <code className={s.toolName}>{name}</code>
-                <span className={s.toolDesc}>{desc}</span>
-              </li>
-            ))}
-          </ul>
-
           <div className={s.ctas}>
             <a className={s.primary} href="/agents/">
               Full agent setup

@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { AGENT_EXPORT_LINKS, KEYBOARD_HINTS } from "@/data/agentSetup";
 import { sectionOf, TERM_BY_SLUG, TERMS } from "@/data/terms";
 import { TOUR_BY_ID, TOURS, type Tour } from "@/data/tours";
 import { registerAgentTools } from "@/lib/agentTools";
@@ -538,48 +539,27 @@ function About({ onClose }: { onClose: () => void }) {
         <span className={s.popRule} />
         <p className={s.kicker}>For AI agents</p>
         <div className={s.pills}>
-          <a className={s.pill} href="/intro/">
-            Introduction
-          </a>
-          <a className={s.pill} href="/agents/">
-            Connect your agent
-          </a>
-          <a className={s.pill} href="/llms.txt">
-            llms.txt
-          </a>
-          <a className={s.pill} href="/llms-full.txt">
-            Full Markdown
-          </a>
-          <a className={s.pill} href="/api/terms.json">
-            JSON
-          </a>
-          <a className={s.pill} href="/openapi.json">
-            OpenAPI
-          </a>
-          <a className={s.pill} href="/mcp/dictionary-mcp.mjs">
-            MCP server
-          </a>
-          <a className={s.pill} href="/terms/">
-            All terms
-          </a>
+          {AGENT_EXPORT_LINKS.map((link) => (
+            <a key={link.href} className={s.pill} href={link.href}>
+              {link.label}
+            </a>
+          ))}
         </div>
         <span className={s.popRule} />
         <p className={s.kicker}>Keys</p>
         <dl className={s.keys}>
-          <dt>
-            <span className={s.kbd}>⌘</span>
-            <span className={s.kbd}>K</span>
-          </dt>
-          <dd>Search the dictionary</dd>
-          <dt>
-            <span className={s.kbd}>←</span>
-            <span className={s.kbd}>→</span>
-          </dt>
-          <dd>Previous / next term</dd>
-          <dt>
-            <span className={s.kbd}>Esc</span>
-          </dt>
-          <dd>Close</dd>
+          {KEYBOARD_HINTS.map((hint) => (
+            <Fragment key={hint.action}>
+              <dt>
+                {hint.keys.map((k) => (
+                  <span key={k} className={s.kbd}>
+                    {k}
+                  </span>
+                ))}
+              </dt>
+              <dd>{hint.action === "Close the panel or dialog" ? "Close" : hint.action}</dd>
+            </Fragment>
+          ))}
         </dl>
       </div>
     </>
@@ -603,12 +583,15 @@ function ToursDialog({ onClose, onStart }: { onClose: () => void; onStart: (id: 
         <p className={s.desc}>Each tour walks a short route across the map, one term at a time.</p>
         <ul className={s.tourList}>
           {TOURS.map((t) => (
-            <li key={t.id}>
+            <li key={t.id} className={s.tourRow}>
               <button type="button" className={s.tourItem} onClick={() => onStart(t.id)}>
                 <span className={s.tourName}>{t.name}</span>
                 <span className={s.tourBlurb}>{t.blurb}</span>
-                <span className={s.tourMeta}>{t.steps.length} stops</span>
+                <span className={s.tourMeta}>{t.steps.length} stops · start on map</span>
               </button>
+              <a className={s.tourShare} href={`/share/tour/${t.id}/`}>
+                Share card
+              </a>
             </li>
           ))}
         </ul>

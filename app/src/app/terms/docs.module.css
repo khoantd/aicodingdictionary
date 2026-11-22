@@ -60,6 +60,15 @@
   text-wrap: balance;
 }
 
+.aliases {
+  margin: 0.9rem 0 0;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in oklch, var(--ink) 64%, transparent);
+}
+
 .def {
   margin: 1.1rem 0 0;
   font-size: 1.12rem;
